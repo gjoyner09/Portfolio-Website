@@ -1,4 +1,7 @@
-body {
-  color: red;
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
 }
 /*# sourceMappingURL=style.css.map */
