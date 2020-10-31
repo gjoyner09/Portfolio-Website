@@ -1,4 +1,109 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    color: #373636;
+}
+
+a:hover {
+    color: black;
+}
+
+@keyframes profpic-animation {
+    0% {
+        left: -500px
+    }
+    100% {
+        left: 150px;
+    }
+}
+
+@keyframes home-text-animation {
+    0% {
+        left: -5000px;
+    }
+    100% {
+        left: 400px;
+    }
+}
+
 .navbar {
     display: flex;
     position: fixed;
+    align-items: center;
+    width: 100%;
+    background-color: #B9B9B9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', cursive;
+    .navbar-div {
+        display: flex;
+        width: 50%;
+    }
+    .navbar-title {
+        margin-left: 20px;
+        text-align: center;
+    }
+    .navbar-links {
+        display: flex;
+        margin-right: 20px;
+        justify-content: flex-end;
+        font-weight: bold;
+        font-size: 24px;
+    }
+}
+
+.home {
+    height: 700px;
+    background-image: url('../img/wedding.jpg');
+    background-size: 100vw;
+}
+
+#profpic {
+    width: 170px;
+    border-radius: 40px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    animation-name: profpic-animation;
+    animation-duration: 1s;
+}
+
+#home-text {
+    height: 60px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    animation-name: home-text-animation;
+    animation-duration: 2.5s;
+    // animation-delay: 1s;
+}
+
+#home-text-background {
+    height: 60px;
+    width: 820px;
+    padding: 10px;
+    background-color: gray;
+    opacity: 0.7;
+    position: absolute;
+    top: 230px;
+    left: 400px;
+    border-radius: 10px;
+    animation-name: home-text-animation;
+    animation-duration: 2s;
+    // animation-delay: 1s;
 }
