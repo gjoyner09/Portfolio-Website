@@ -1,7 +1,149 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #373636;
+}
+
+a:hover {
+  color: black;
+}
+
+@-webkit-keyframes profpic-animation {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 150px;
+  }
+}
+
+@keyframes profpic-animation {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 150px;
+  }
+}
+
+@-webkit-keyframes home-text-animation {
+  0% {
+    left: -5000px;
+  }
+  100% {
+    left: 400px;
+  }
+}
+
+@keyframes home-text-animation {
+  0% {
+    left: -5000px;
+  }
+  100% {
+    left: 400px;
+  }
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #B9B9B9;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poiret One', cursive;
+}
+
+.navbar .navbar-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.navbar .navbar-title {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.navbar .navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.home {
+  height: 700px;
+  background-image: url("../img/wedding.jpg");
+  background-size: 100vw;
+}
+
+#profpic {
+  width: 170px;
+  border-radius: 40px;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  -webkit-animation-name: profpic-animation;
+          animation-name: profpic-animation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+#home-text {
+  height: 60px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
+  position: absolute;
+  top: 230px;
+  left: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-animation-name: home-text-animation;
+          animation-name: home-text-animation;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+#home-text-background {
+  height: 60px;
+  width: 820px;
+  padding: 10px;
+  background-color: gray;
+  opacity: 0.7;
+  position: absolute;
+  top: 230px;
+  left: 400px;
+  border-radius: 10px;
+  -webkit-animation-name: home-text-animation;
+          animation-name: home-text-animation;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 /*# sourceMappingURL=style.css.map */
