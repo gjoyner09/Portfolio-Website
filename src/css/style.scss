@@ -6,12 +6,29 @@ p {
     margin-top: 0;
 }
 
-a {
-    color: #373636;
+a:link {
+    // color: #373636;
+    color: black;
+    text-decoration: none;
+    padding: 14px 14px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #B9B9B9;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+    padding: 14px 2px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #B9B9B9;
 }
 
 a:hover {
     color: black;
+    border-bottom: 2px solid black;
+    text-decoration: none;
 }
 
 @keyframes profpic-animation {
@@ -19,7 +36,7 @@ a:hover {
         left: -500px
     }
     100% {
-        left: 150px;
+        left: 100px;
     }
 }
 
@@ -28,7 +45,7 @@ a:hover {
         left: -5000px;
     }
     100% {
-        left: 400px;
+        left: 300px;
     }
 }
 
@@ -69,7 +86,7 @@ a:hover {
     border-radius: 40px;
     position: absolute;
     top: 150px;
-    left: 150px;
+    left: 100px;
     animation-name: profpic-animation;
     animation-duration: 1s;
 }
@@ -82,7 +99,7 @@ a:hover {
     color: black;
     position: absolute;
     top: 230px;
-    left: 400px;
+    left: 300px;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
@@ -90,20 +107,18 @@ a:hover {
     align-items: center;
     animation-name: home-text-animation;
     animation-duration: 2.5s;
-    // animation-delay: 1s;
 }
 
 #home-text-background {
     height: 60px;
-    width: 820px;
+    width: 860px;
     padding: 10px;
     background-color: gray;
     opacity: 0.7;
     position: absolute;
     top: 230px;
-    left: 400px;
+    left: 300px;
     border-radius: 10px;
     animation-name: home-text-animation;
     animation-duration: 2s;
-    // animation-delay: 1s;
 }
