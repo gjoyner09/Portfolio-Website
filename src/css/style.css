@@ -6,6 +6,7 @@ p {
   margin-top: 0;
 }
 
+<<<<<<< HEAD
 a {
   color: #373636;
   padding: 14px 14px;
@@ -15,6 +16,30 @@ a {
 
 a:hover {
   border-bottom: solid #373636;
+=======
+a:link {
+  color: black;
+  text-decoration: none;
+  padding: 14px 14px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid #B9B9B9;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+  padding: 14px 2px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid #B9B9B9;
+}
+
+a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+  text-decoration: none;
+>>>>>>> master
 }
 
 @-webkit-keyframes profpic-animation {
@@ -22,7 +47,11 @@ a:hover {
     left: -500px;
   }
   100% {
+<<<<<<< HEAD
     left: 70px;
+=======
+    left: 100px;
+>>>>>>> master
   }
 }
 
@@ -31,7 +60,11 @@ a:hover {
     left: -500px;
   }
   100% {
+<<<<<<< HEAD
     left: 70px;
+=======
+    left: 100px;
+>>>>>>> master
   }
 }
 
@@ -40,7 +73,11 @@ a:hover {
     left: -5000px;
   }
   100% {
+<<<<<<< HEAD
     left: 270px;
+=======
+    left: 300px;
+>>>>>>> master
   }
 }
 
@@ -49,7 +86,11 @@ a:hover {
     left: -5000px;
   }
   100% {
+<<<<<<< HEAD
     left: 270px;
+=======
+    left: 300px;
+>>>>>>> master
   }
 }
 
@@ -105,7 +146,11 @@ a:hover {
   border-radius: 40px;
   position: absolute;
   top: 150px;
+<<<<<<< HEAD
   left: 70px;
+=======
+  left: 100px;
+>>>>>>> master
   -webkit-animation-name: profpic-animation;
           animation-name: profpic-animation;
   -webkit-animation-duration: 1s;
@@ -120,7 +165,14 @@ a:hover {
   color: black;
   position: absolute;
   top: 230px;
+<<<<<<< HEAD
   left: 270px;
+=======
+  left: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+>>>>>>> master
   padding: 10px;
   border-radius: 10px;
   display: -webkit-box;
@@ -137,13 +189,17 @@ a:hover {
 
 #home #home-text-background {
   height: 60px;
-  width: 820px;
+  width: 860px;
   padding: 10px;
   background-color: #BF5460;
   opacity: 0.8;
   position: absolute;
   top: 230px;
+<<<<<<< HEAD
   left: 270px;
+=======
+  left: 300px;
+>>>>>>> master
   border-radius: 10px;
   -webkit-animation-name: home-text-animation;
           animation-name: home-text-animation;
