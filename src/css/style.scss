@@ -8,10 +8,13 @@ p {
 
 a {
     color: #373636;
+    padding: 14px 14px;
+    border-bottom: solid #B9B9B9;
+    text-decoration: none;
 }
 
 a:hover {
-    color: black;
+    border-bottom: solid #373636;
 }
 
 @keyframes profpic-animation {
@@ -56,17 +59,14 @@ a:hover {
         justify-content: flex-end;
         font-weight: bold;
         font-size: 24px;
-        width: 65%
+        width: 65%;
     }
 }
 
-.home {
+#home {
     height: 700px;
     background-image: url('../img/wedding.jpg');
     background-size: 100vw;
-    #wedding {
-        width: 100vw;
-    }
     #profpic {
         width: 170px;
         border-radius: 40px;
@@ -85,7 +85,6 @@ a:hover {
         position: absolute;
         top: 230px;
         left: 270px;
-        align-items: center;
         padding: 10px;
         border-radius: 10px;
         display: flex;
@@ -108,8 +107,55 @@ a:hover {
     }
 }
 
+#bio {
+    height: 700px;
+    background-image: url('../img/belize-desktop.jpg');
+    background-size: 100vw;
+    #cricket {
+        width: 230px;
+        border-radius: 40px;
+        position: absolute;
+        top: 870px;
+        left: 900px;
+    }
+    #bio-title {
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        text-align: center;
+        width: 100vw;
+        font-size: 36px;
+        position: absolute;
+        top: 800px;
+    }
+    #bio-text {
+        width: 450px;
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: 870px;
+        left: 100px;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: right;
+    }
+    #bio-text-background {
+        height: 400px;
+        width: 450px;
+        padding: 10px;
+        background-color: gray;
+        opacity: 0.75;
+        position: absolute;
+        top: 870px;
+        left: 100px;
+        border-radius: 10px;
+    }
+}
+
 @media only screen and (max-width: 1150px) {
-    .home {
+    #home {
         #home-text {
             font-size: 24px;
         }
@@ -120,7 +166,23 @@ a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-    .home {
+    @keyframes profpic-animation {
+        0% {
+            left: -500px
+        }
+        100% {
+            left: 40px;
+        }
+    }
+    @keyframes home-text-animation {
+        0% {
+            left: -5000px
+        }
+        100% {
+            left: 200px;
+        }
+    }
+    #home {
         background-image: url('../img/wedding-tablet-big.jpg');
         #profpic {
             width: 130px;
@@ -139,7 +201,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 925px) {
-    .home {
+    #home {
         #home-text {
             font-size: 20px;
         }
@@ -150,7 +212,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 825px) {
-    .home {
+    #home {
         background-image: url('../img/wedding-tablet.jpg');
         #home-text-background {
             width: 370px;
@@ -172,8 +234,11 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 610px) {
-    .home {
+@media only screen and (max-width: 625px) {
+    a {
+        padding: 5px 5px;
+    }
+    #home {
         background-image: url('../img/wedding-tablet-small.jpg');
         #home-text-background {
             width: 300px;
@@ -193,7 +258,7 @@ a:hover {
             font-size: 14px;
         }
     }
-    .home {
+    #home {
         background-image: url('../img/wedding-phone.jpg');
         #home-text-background {
             width: 230px;
@@ -208,6 +273,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 420px) {
+    a {
+        padding: 2px 2px;
+    }
     .navbar {
         .navbar-title {
             font-size: 10px;
@@ -216,18 +284,24 @@ a:hover {
             font-size: 16px;
         }
     }
-    .home {
+    #home {
         #profpic {
-            width: 90px;
-            left: 20px;
+            width: 170px;
+            top: 100px;
+            left: 30px;
         }
         #home-text {
-            top: 170px;
-            left: 130px;
+            top: 400px;
+            left: 30px;
+            font-size: 24px;
+            width: 300px;
+            padding-top: 20px;
         }
         #home-text-background {
-            top: 170px;
-            left: 130px;
+            top: 400px;
+            left: 30px;
+            width: 300px;
+            height: 80px;
         }
     }
 }
