@@ -120,14 +120,6 @@ ul {
     height: 700px;
     background-image: url('../img/vaucluse-desktop.jpg');
     background-size: 100%;
-    width: 100%;
-    #cricket {
-        width: 230px;
-        border-radius: 40px;
-        position: absolute;
-        top: 870px;
-        left: 900px;
-    }
     #bio-title {
         font-family: 'Poiret One', cursive;
         font-weight: bold;
@@ -139,31 +131,45 @@ ul {
         position: absolute;
         top: 800px;
     }
-    #bio-text {
-        width: 450px;
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
-        font-size: 20px;
-        color: black;
+    #cricket {
+        width: 22%;
+        border-radius: 40px;
         position: absolute;
         top: 870px;
-        left: 100px;
-        padding: 10px;
-        border-radius: 10px;
-        display: flex;
-        align-items: right;
-        display: inline;
+        left: 67%;
     }
-    #bio-text-background {
-        height: 400px;
-        width: 450px;
-        padding: 10px;
-        background-color: #62B8A1;
-        opacity: 0.75;
+    #bio-div {
+        width: 35%;
         position: absolute;
+        left: 7%;
         top: 870px;
-        left: 100px;
-        border-radius: 10px;
+        display: grid;
+        #bio-text {
+            width: 100%;
+            font-family: 'Poiret One', cursive;
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: right;
+            display: inline;
+            grid-column: 1;
+            grid-row: 1;
+            z-index: 1;
+        }
+        #bio-text-background {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            background-color: #62B8A1;
+            opacity: 0.75;
+            position: absolute;
+            border-radius: 10px;
+            grid-column: 1;
+            grid-row: 1;
+        }
     }
 }
 
@@ -236,37 +242,36 @@ ul {
         position: absolute;
         top: 2800px;
     }
-    #portfolio-text {
-        width: 500px;
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
-        font-size: 20px;
-        position: absolute;
+    #portfolio-main {
+        width: 40%;
         top: 2880px;
-        left: 100px;
-        padding: 10px;
-        border-radius: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        .portfolio-div {
+        left: 7%;
+        #portfolio-text {
+            font-family: 'Poiret One', cursive;
+            font-weight: bold;
+            font-size: 20px;
+            position: absolute;
+            padding: 10px;
+            border-radius: 10px;
             display: flex;
-            width: 50%;
-            margin-bottom: 10px;
-            img {
-                width: 90%;
+            flex-wrap: wrap;
+            .portfolio-div {
+                display: flex;
+                width: 50%;
+                margin-bottom: 10px;
+                img {
+                    width: 90%;
+                }
             }
         }
-    }
-    #portfolio-text-background {
-        height: 435px;
-        width: 500px;
-        padding: 10px;
-        background-color: #69C86D;
-        opacity: 0.75;
-        position: absolute;
-        top: 2870px;
-        left: 90px;
-        border-radius: 10px;
+        #portfolio-text-background {
+            height: 435px;
+            padding: 10px;
+            background-color: #69C86D;
+            opacity: 0.75;
+            position: absolute;
+            border-radius: 10px;
+        }
     }
     #tech-img-div {
         width: 320px;
@@ -363,6 +368,7 @@ ul {
     font-weight: bold;
     font-size: 20px;
     height: 30px;
+    z-index: 2;
     img {
         height: 100%
     }
