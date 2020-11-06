@@ -6,41 +6,24 @@ p {
     margin-top: 0;
 }
 
-<<<<<<< HEAD
 a {
-    color: #373636;
-    padding: 14px 14px;
-    border-bottom: solid #B9B9B9;
     text-decoration: none;
 }
 
-a:hover {
-    border-bottom: solid #373636;
-=======
-a:link {
-    // color: #373636;
-    color: black;
-    text-decoration: none;
-    padding: 14px 14px;
-    text-align: center;
-    display: inline-block;
-    border-bottom: 2px solid #B9B9B9;
+.navbar {
+    a {
+        color: #373636;
+        padding: 14px 14px;
+        border-bottom: solid #B9B9B9;
+        text-decoration: none;
+    }
+    a:hover {
+        border-bottom: solid #373636;
+    }
 }
 
-a:visited {
-    color: black;
-    text-decoration: none;
-    padding: 14px 2px;
-    text-align: center;
-    display: inline-block;
-    border-bottom: 2px solid #B9B9B9;
-}
-
-a:hover {
-    color: black;
-    border-bottom: 2px solid black;
-    text-decoration: none;
->>>>>>> master
+ul {
+    margin-top: 0;
 }
 
 @keyframes profpic-animation {
@@ -48,11 +31,7 @@ a:hover {
         left: -500px
     }
     100% {
-<<<<<<< HEAD
         left: 70px;
-=======
-        left: 100px;
->>>>>>> master
     }
 }
 
@@ -61,11 +40,7 @@ a:hover {
         left: -5000px;
     }
     100% {
-<<<<<<< HEAD
         left: 270px;
-=======
-        left: 300px;
->>>>>>> master
     }
 }
 
@@ -78,7 +53,7 @@ a:hover {
     margin: 0;
     padding: 0;
     font-family: 'Poiret One', cursive;
-    z-index: 1;
+    z-index: 2;
     .navbar-div {
         display: flex;
     }
@@ -141,7 +116,6 @@ a:hover {
     }
 }
 
-<<<<<<< HEAD
 #bio {
     height: 700px;
     background-image: url('../img/vaucluse-desktop.jpg');
@@ -178,6 +152,7 @@ a:hover {
         border-radius: 10px;
         display: flex;
         align-items: right;
+        display: inline;
     }
     #bio-text-background {
         height: 400px;
@@ -196,13 +171,9 @@ a:hover {
     height: 1300px;
     background-image: url('../img/huddle-desktop.jpg');
     background-size: 100%;
-    // #cricket {
-    //     width: 230px;
-    //     border-radius: 40px;
-    //     position: absolute;
-    //     top: 870px;
-    //     left: 900px;
-    // }
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 18px;
     #cv-title {
         font-family: 'Poiret One', cursive;
         font-weight: bold;
@@ -212,30 +183,43 @@ a:hover {
         position: absolute;
         top: 1500px;
     }
-    #cv-text {
-        width: 450px;
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
-        font-size: 20px;
-        color: black;
+    #cv-div {
+        width: 80%;
         position: absolute;
-        top: 1570px;
-        left: 100px;
-        padding: 10px;
-        border-radius: 10px;
+        top: 1600px;
+        left: 10%;
         display: flex;
-        align-items: right;
-    }
-    #cv-text-background {
-        height: 400px;
-        width: 450px;
+        flex-wrap: wrap;
         padding: 10px;
-        background-color: gray;
-        opacity: 0.75;
-        position: absolute;
-        top: 1570px;
-        left: 100px;
-        border-radius: 10px;
+        .cv-img {
+            width: 20%;
+            img {
+                width: 60%;
+                border-radius: 10px;
+            }
+        }
+        .cv-text {
+            width: 80%;
+            display: grid;
+            margin-bottom: 30px;
+            .cv-text-1,
+            .cv-text-2 {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .cv-text-1 {
+                background-color: #F5C846;
+                border-radius: 10px;
+                opacity: .75;
+                width: 100%;
+                height: 100%;
+            }
+            .cv-text-2 {
+                z-index: 1;
+                padding: 10px;
+                padding-top: 20px;
+            }
+        }
     }
 }
 
@@ -243,13 +227,6 @@ a:hover {
     height: 700px;
     background-image: url('../img/peoplemover-desktop.jpg');
     background-size: 100%;
-    // #cricket {
-    //     width: 230px;
-    //     border-radius: 40px;
-    //     position: absolute;
-    //     top: 870px;
-    //     left: 900px;
-    // }
     #portfolio-title {
         font-family: 'Poiret One', cursive;
         font-weight: bold;
@@ -260,29 +237,71 @@ a:hover {
         top: 2800px;
     }
     #portfolio-text {
-        width: 450px;
+        width: 500px;
         font-family: 'Poiret One', cursive;
         font-weight: bold;
         font-size: 20px;
-        color: black;
         position: absolute;
-        top: 2870px;
+        top: 2880px;
         left: 100px;
         padding: 10px;
         border-radius: 10px;
         display: flex;
-        align-items: right;
+        flex-wrap: wrap;
+        .portfolio-div {
+            display: flex;
+            width: 50%;
+            margin-bottom: 10px;
+            img {
+                width: 90%;
+            }
+        }
     }
     #portfolio-text-background {
-        height: 400px;
-        width: 450px;
+        height: 435px;
+        width: 500px;
         padding: 10px;
-        background-color: gray;
+        background-color: #69C86D;
         opacity: 0.75;
         position: absolute;
         top: 2870px;
-        left: 100px;
+        left: 90px;
         border-radius: 10px;
+    }
+    #tech-img-div {
+        width: 320px;
+        position: absolute;
+        top: 2930px;
+        left: 850px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .tech-img {
+            width: 33.3%;
+            img {
+                width: 65%;
+            }
+            margin-bottom: 30px;
+        }
+    }
+    #technologies-background {
+        height: 435px;
+        width: 300px;
+        padding: 10px;
+        background-color: #69C86D;
+        opacity: 0.75;
+        position: absolute;
+        top: 2870px;
+        left: 830px;
+        border-radius: 10px;
+    }
+    #tech-title {
+        font-family: 'Poiret One', cursive;
+        font-weight: bold;
+        font-size: 24px;
+        position: absolute;
+        top: 2885px;
+        left: 930px;
     }
 }
 
@@ -331,16 +350,6 @@ a:hover {
         left: 100px;
         border-radius: 10px;
     }
-=======
-#profpic {
-    width: 170px;
-    border-radius: 40px;
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    animation-name: profpic-animation;
-    animation-duration: 1s;
->>>>>>> master
 }
 
 #footer-id {
@@ -352,7 +361,6 @@ a:hover {
     text-align: right;
     font-family: 'Poiret One', cursive;
     font-weight: bold;
-<<<<<<< HEAD
     font-size: 20px;
     height: 30px;
     img {
@@ -539,32 +547,4 @@ a:hover {
             height: 80px;
         }
     }
-=======
-    font-size: 28px;
-    color: black;
-    position: absolute;
-    top: 230px;
-    left: 300px;
-    align-items: center;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    animation-name: home-text-animation;
-    animation-duration: 2.5s;
-}
-
-#home-text-background {
-    height: 60px;
-    width: 860px;
-    padding: 10px;
-    background-color: gray;
-    opacity: 0.7;
-    position: absolute;
-    top: 230px;
-    left: 300px;
-    border-radius: 10px;
-    animation-name: home-text-animation;
-    animation-duration: 2s;
->>>>>>> master
 }

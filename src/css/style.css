@@ -6,40 +6,23 @@ p {
   margin-top: 0;
 }
 
-<<<<<<< HEAD
 a {
+  text-decoration: none;
+}
+
+.navbar a {
   color: #373636;
   padding: 14px 14px;
   border-bottom: solid #B9B9B9;
   text-decoration: none;
 }
 
-a:hover {
+.navbar a:hover {
   border-bottom: solid #373636;
-=======
-a:link {
-  color: black;
-  text-decoration: none;
-  padding: 14px 14px;
-  text-align: center;
-  display: inline-block;
-  border-bottom: 2px solid #B9B9B9;
 }
 
-a:visited {
-  color: black;
-  text-decoration: none;
-  padding: 14px 2px;
-  text-align: center;
-  display: inline-block;
-  border-bottom: 2px solid #B9B9B9;
-}
-
-a:hover {
-  color: black;
-  border-bottom: 2px solid black;
-  text-decoration: none;
->>>>>>> master
+ul {
+  margin-top: 0;
 }
 
 @-webkit-keyframes profpic-animation {
@@ -47,11 +30,7 @@ a:hover {
     left: -500px;
   }
   100% {
-<<<<<<< HEAD
     left: 70px;
-=======
-    left: 100px;
->>>>>>> master
   }
 }
 
@@ -60,11 +39,7 @@ a:hover {
     left: -500px;
   }
   100% {
-<<<<<<< HEAD
     left: 70px;
-=======
-    left: 100px;
->>>>>>> master
   }
 }
 
@@ -73,11 +48,7 @@ a:hover {
     left: -5000px;
   }
   100% {
-<<<<<<< HEAD
     left: 270px;
-=======
-    left: 300px;
->>>>>>> master
   }
 }
 
@@ -86,11 +57,7 @@ a:hover {
     left: -5000px;
   }
   100% {
-<<<<<<< HEAD
     left: 270px;
-=======
-    left: 300px;
->>>>>>> master
   }
 }
 
@@ -107,7 +74,7 @@ a:hover {
   margin: 0;
   padding: 0;
   font-family: 'Poiret One', cursive;
-  z-index: 1;
+  z-index: 2;
 }
 
 .navbar .navbar-div {
@@ -146,11 +113,7 @@ a:hover {
   border-radius: 40px;
   position: absolute;
   top: 150px;
-<<<<<<< HEAD
   left: 70px;
-=======
-  left: 100px;
->>>>>>> master
   -webkit-animation-name: profpic-animation;
           animation-name: profpic-animation;
   -webkit-animation-duration: 1s;
@@ -165,14 +128,7 @@ a:hover {
   color: black;
   position: absolute;
   top: 230px;
-<<<<<<< HEAD
   left: 270px;
-=======
-  left: 300px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> master
   padding: 10px;
   border-radius: 10px;
   display: -webkit-box;
@@ -189,17 +145,13 @@ a:hover {
 
 #home #home-text-background {
   height: 60px;
-  width: 860px;
+  width: 820px;
   padding: 10px;
   background-color: #BF5460;
   opacity: 0.8;
   position: absolute;
   top: 230px;
-<<<<<<< HEAD
   left: 270px;
-=======
-  left: 300px;
->>>>>>> master
   border-radius: 10px;
   -webkit-animation-name: home-text-animation;
           animation-name: home-text-animation;
@@ -251,6 +203,7 @@ a:hover {
   -webkit-box-align: right;
       -ms-flex-align: right;
           align-items: right;
+  display: inline;
 }
 
 #bio #bio-text-background {
@@ -269,6 +222,9 @@ a:hover {
   height: 1300px;
   background-image: url("../img/huddle-desktop.jpg");
   background-size: 100%;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #cv #cv-title {
@@ -281,35 +237,55 @@ a:hover {
   top: 1500px;
 }
 
-#cv #cv-text {
-  width: 450px;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
+#cv #cv-div {
+  width: 80%;
   position: absolute;
-  top: 1570px;
-  left: 100px;
-  padding: 10px;
-  border-radius: 10px;
+  top: 1600px;
+  left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
 }
 
-#cv #cv-text-background {
-  height: 400px;
-  width: 450px;
-  padding: 10px;
-  background-color: gray;
-  opacity: 0.75;
-  position: absolute;
-  top: 1570px;
-  left: 100px;
+#cv #cv-div .cv-img {
+  width: 20%;
+}
+
+#cv #cv-div .cv-img img {
+  width: 60%;
   border-radius: 10px;
+}
+
+#cv #cv-div .cv-text {
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 30px;
+}
+
+#cv #cv-div .cv-text .cv-text-1,
+#cv #cv-div .cv-text .cv-text-2 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+#cv #cv-div .cv-text .cv-text-1 {
+  background-color: #F5C846;
+  border-radius: 10px;
+  opacity: .75;
+  width: 100%;
+  height: 100%;
+}
+
+#cv #cv-div .cv-text .cv-text-2 {
+  z-index: 1;
+  padding: 10px;
+  padding-top: 20px;
 }
 
 #portfolio {
@@ -329,34 +305,89 @@ a:hover {
 }
 
 #portfolio #portfolio-text {
-  width: 450px;
+  width: 500px;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   font-size: 20px;
-  color: black;
   position: absolute;
-  top: 2870px;
+  top: 2880px;
   left: 100px;
   padding: 10px;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#portfolio #portfolio-text .portfolio-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+#portfolio #portfolio-text .portfolio-div img {
+  width: 90%;
 }
 
 #portfolio #portfolio-text-background {
-  height: 400px;
-  width: 450px;
+  height: 435px;
+  width: 500px;
   padding: 10px;
-  background-color: gray;
+  background-color: #69C86D;
   opacity: 0.75;
   position: absolute;
   top: 2870px;
-  left: 100px;
+  left: 90px;
   border-radius: 10px;
+}
+
+#portfolio #tech-img-div {
+  width: 320px;
+  position: absolute;
+  top: 2930px;
+  left: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#portfolio #tech-img-div .tech-img {
+  width: 33.3%;
+  margin-bottom: 30px;
+}
+
+#portfolio #tech-img-div .tech-img img {
+  width: 65%;
+}
+
+#portfolio #technologies-background {
+  height: 435px;
+  width: 300px;
+  padding: 10px;
+  background-color: #69C86D;
+  opacity: 0.75;
+  position: absolute;
+  top: 2870px;
+  left: 830px;
+  border-radius: 10px;
+}
+
+#portfolio #tech-title {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 24px;
+  position: absolute;
+  top: 2885px;
+  left: 930px;
 }
 
 #blog {
