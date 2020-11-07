@@ -162,10 +162,9 @@ ul {
         #bio-text-background {
             width: 100%;
             height: 100%;
-            padding: 10px;
             background-color: #62B8A1;
             opacity: 0.75;
-            position: absolute;
+            padding: 10px;
             border-radius: 10px;
             grid-column: 1;
             grid-row: 1;
@@ -181,8 +180,6 @@ ul {
     font-weight: bold;
     font-size: 18px;
     #cv-title {
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
         text-align: center;
         width: 100%;
         font-size: 36px;
@@ -196,9 +193,9 @@ ul {
         left: 10%;
         display: flex;
         flex-wrap: wrap;
-        padding: 10px;
         .cv-img {
             width: 20%;
+            margin-bottom: 30px;
             img {
                 width: 60%;
                 border-radius: 10px;
@@ -243,10 +240,12 @@ ul {
         top: 2800px;
     }
     #portfolio-main {
-        width: 40%;
+        position: absolute;
+        width: 35%;
         top: 2880px;
         left: 7%;
         #portfolio-text {
+            width: 100%;
             font-family: 'Poiret One', cursive;
             font-weight: bold;
             font-size: 20px;
@@ -255,58 +254,55 @@ ul {
             border-radius: 10px;
             display: flex;
             flex-wrap: wrap;
+            background-color: rgba(105, 200, 109, 0.75);
+            border-radius: 10px;
             .portfolio-div {
                 display: flex;
                 width: 50%;
                 margin-bottom: 10px;
                 img {
-                    width: 90%;
+                    width: 95%;
+                    height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                p {
+                    width: 95%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
-        #portfolio-text-background {
-            height: 435px;
-            padding: 10px;
-            background-color: #69C86D;
-            opacity: 0.75;
-            position: absolute;
-            border-radius: 10px;
-        }
     }
-    #tech-img-div {
-        width: 320px;
-        position: absolute;
-        top: 2930px;
-        left: 850px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        .tech-img {
-            width: 33.3%;
-            img {
-                width: 65%;
-            }
-            margin-bottom: 30px;
-        }
-    }
-    #technologies-background {
-        height: 435px;
-        width: 300px;
-        padding: 10px;
-        background-color: #69C86D;
-        opacity: 0.75;
-        position: absolute;
-        top: 2870px;
-        left: 830px;
-        border-radius: 10px;
-    }
-    #tech-title {
+    #tech-div {
         font-family: 'Poiret One', cursive;
         font-weight: bold;
         font-size: 24px;
-        position: absolute;
-        top: 2885px;
-        left: 930px;
+        position: relative;
+        width: 24%;
+        left: 65%;
+        top: 180px;
+        background-color: rgba(105, 200, 109, 0.75);
+        padding: 0;
+        margin: 0;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        #tech-title {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            width: 100%
+        }
+        .tech-img {
+            width: 25%;
+            padding: 4%;
+            margin: 0;
+            img {
+                padding: 0;
+                margin: 0;
+            }
+        }
     }
 }
 
