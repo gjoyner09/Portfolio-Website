@@ -307,16 +307,9 @@ ul {
 }
 
 #blog {
-    height: 700px;
+    height: 800px;
     background-image: url('../img/belize-desktop.jpg');
     background-size: 100%;
-    // #cricket {
-    //     width: 230px;
-    //     border-radius: 40px;
-    //     position: absolute;
-    //     top: 870px;
-    //     left: 900px;
-    // }
     #blog-title {
         font-family: 'Poiret One', cursive;
         font-weight: bold;
@@ -326,30 +319,34 @@ ul {
         position: absolute;
         top: 3500px;
     }
-    #blog-text {
-        width: 450px;
+    #blog-div {
+        position: relative;
+        top: 200px;
+        left: 15%;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgba(169, 164, 247, 0.75);
+        border-radius: 10px;
+        padding-top: 20px;
         font-family: 'Poiret One', cursive;
         font-weight: bold;
         font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 3570px;
-        left: 100px;
-        padding: 10px;
-        border-radius: 10px;
-        display: flex;
-        align-items: right;
-    }
-    #blog-text-background {
-        height: 400px;
-        width: 450px;
-        padding: 10px;
-        background-color: gray;
-        opacity: 0.75;
-        position: absolute;
-        top: 3570px;
-        left: 100px;
-        border-radius: 10px;
+        .blog-pic {
+            width: 33.3%;
+            text-align: center;
+            img {
+                width: 80%;
+            }
+        }
+        .blog-text {
+            width: 33.3%;
+            p {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 }
 

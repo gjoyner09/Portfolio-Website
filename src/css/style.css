@@ -396,7 +396,7 @@ ul {
 }
 
 #blog {
-  height: 700px;
+  height: 800px;
   background-image: url("../img/belize-desktop.jpg");
   background-size: 100%;
 }
@@ -411,35 +411,41 @@ ul {
   top: 3500px;
 }
 
-#blog #blog-text {
-  width: 450px;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
-  position: absolute;
-  top: 3570px;
-  left: 100px;
-  padding: 10px;
-  border-radius: 10px;
+#blog #blog-div {
+  position: relative;
+  top: 200px;
+  left: 15%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(169, 164, 247, 0.75);
+  border-radius: 10px;
+  padding-top: 20px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-#blog #blog-text-background {
-  height: 400px;
-  width: 450px;
-  padding: 10px;
-  background-color: gray;
-  opacity: 0.75;
-  position: absolute;
-  top: 3570px;
-  left: 100px;
-  border-radius: 10px;
+#blog #blog-div .blog-pic {
+  width: 33.3%;
+  text-align: center;
+}
+
+#blog #blog-div .blog-pic img {
+  width: 80%;
+}
+
+#blog #blog-div .blog-text {
+  width: 33.3%;
+}
+
+#blog #blog-div .blog-text p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #footer-id {
