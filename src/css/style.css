@@ -74,6 +74,7 @@ ul {
   margin: 0;
   padding: 0;
   font-family: 'Poiret One', cursive;
+  font-weight: bold;
   z-index: 2;
 }
 
@@ -122,8 +123,7 @@ ul {
 
 #home #home-text {
   height: 60px;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
   font-size: 28px;
   color: black;
   position: absolute;
@@ -147,8 +147,7 @@ ul {
   height: 60px;
   width: 820px;
   padding: 10px;
-  background-color: #BF5460;
-  opacity: 0.8;
+  background-color: rgba(238, 195, 198, 0.75);
   position: absolute;
   top: 230px;
   left: 270px;
@@ -196,8 +195,7 @@ ul {
 
 #bio #bio-div #bio-text {
   width: 100%;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color: black;
   padding: 10px;
@@ -219,8 +217,7 @@ ul {
 #bio #bio-div #bio-text-background {
   width: 100%;
   height: 100%;
-  background-color: #62B8A1;
-  opacity: 0.75;
+  background-color: rgba(238, 195, 198, 0.75);
   padding: 10px;
   border-radius: 10px;
   -ms-grid-column: 1;
@@ -233,8 +230,7 @@ ul {
   height: 1300px;
   background-image: url("../img/huddle-desktop.jpg");
   background-size: 100%;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
   font-size: 18px;
 }
 
@@ -244,6 +240,8 @@ ul {
   font-size: 36px;
   position: absolute;
   top: 1500px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
 }
 
 #cv #cv-div {
@@ -284,9 +282,8 @@ ul {
 }
 
 #cv #cv-div .cv-text .cv-text-1 {
-  background-color: #F5C846;
+  background-color: rgba(238, 195, 198, 0.75);
   border-radius: 10px;
-  opacity: .75;
   width: 100%;
   height: 100%;
 }
@@ -322,8 +319,7 @@ ul {
 
 #portfolio #portfolio-main #portfolio-text {
   width: 100%;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   position: absolute;
   padding: 10px;
@@ -333,7 +329,7 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: rgba(105, 200, 109, 0.75);
+  background-color: rgba(238, 195, 198, 0.75);
   border-radius: 10px;
 }
 
@@ -359,14 +355,13 @@ ul {
 }
 
 #portfolio #tech-div {
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
   font-size: 24px;
   position: relative;
   width: 24%;
   left: 65%;
   top: 180px;
-  background-color: rgba(105, 200, 109, 0.75);
+  background-color: rgba(238, 195, 198, 0.75);
   padding: 0;
   margin: 0;
   border-radius: 10px;
@@ -421,11 +416,10 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: rgba(169, 164, 247, 0.75);
+  background-color: rgba(238, 195, 198, 0.75);
   border-radius: 10px;
   padding-top: 20px;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
 }
 
@@ -452,7 +446,7 @@ ul {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: gray;
+  background-color: #B9B9B9;
   color: black;
   text-align: right;
   font-family: 'Poiret One', cursive;
