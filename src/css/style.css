@@ -30,7 +30,7 @@ ul {
     left: -500px;
   }
   100% {
-    left: 70px;
+    left: 5%;
   }
 }
 
@@ -39,7 +39,7 @@ ul {
     left: -500px;
   }
   100% {
-    left: 70px;
+    left: 5%;
   }
 }
 
@@ -48,7 +48,7 @@ ul {
     left: -5000px;
   }
   100% {
-    left: 270px;
+    left: 25%;
   }
 }
 
@@ -57,7 +57,7 @@ ul {
     left: -5000px;
   }
   100% {
-    left: 270px;
+    left: 25%;
   }
 }
 
@@ -104,17 +104,19 @@ ul {
 }
 
 #home {
-  height: 700px;
+  height: 800px;
   background-image: url("../img/wedding.jpg");
   background-size: 100vw;
+  display: -ms-grid;
+  display: grid;
 }
 
 #home #profpic {
-  width: 170px;
+  width: 17%;
   border-radius: 40px;
   position: absolute;
-  top: 150px;
-  left: 70px;
+  top: 130px;
+  left: 5%;
   -webkit-animation-name: profpic-animation;
           animation-name: profpic-animation;
   -webkit-animation-duration: 1s;
@@ -123,12 +125,13 @@ ul {
 
 #home #home-text {
   height: 60px;
+  width: 60%;
   font-family: 'Quicksand', sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   color: black;
   position: absolute;
   top: 230px;
-  left: 270px;
+  left: 25%;
   padding: 10px;
   border-radius: 10px;
   display: -webkit-box;
@@ -145,12 +148,12 @@ ul {
 
 #home #home-text-background {
   height: 60px;
-  width: 820px;
+  width: 60%;
   padding: 10px;
   background-color: rgba(238, 195, 198, 0.75);
   position: absolute;
   top: 230px;
-  left: 270px;
+  left: 25%;
   border-radius: 10px;
   -webkit-animation-name: home-text-animation;
           animation-name: home-text-animation;
@@ -159,9 +162,10 @@ ul {
 }
 
 #bio {
-  height: 700px;
+  height: 800px;
   background-image: url("../img/vaucluse-desktop.jpg");
   background-size: 100%;
+  position: relative;
 }
 
 #bio #bio-title {
@@ -173,65 +177,37 @@ ul {
   padding: 0;
   font-size: 36px;
   position: absolute;
-  top: 800px;
+  top: 120px;
+}
+
+#bio #bio-text {
+  position: absolute;
+  left: 7%;
+  top: 200px;
+  width: 35%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(238, 195, 198, 0.75);
 }
 
 #bio #cricket {
   width: 22%;
   border-radius: 40px;
   position: absolute;
-  top: 870px;
+  top: 200px;
   left: 67%;
 }
 
-#bio #bio-div {
-  width: 35%;
-  position: absolute;
-  left: 7%;
-  top: 870px;
-  display: -ms-grid;
-  display: grid;
-}
-
-#bio #bio-div #bio-text {
-  width: 100%;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  color: black;
-  padding: 10px;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
-  display: inline;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  z-index: 1;
-}
-
-#bio #bio-div #bio-text-background {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(238, 195, 198, 0.75);
-  padding: 10px;
-  border-radius: 10px;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
 #cv {
-  height: 1300px;
+  height: 1400px;
   background-image: url("../img/huddle-desktop.jpg");
   background-size: 100%;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
+  position: relative;
 }
 
 #cv #cv-title {
@@ -239,7 +215,7 @@ ul {
   width: 100%;
   font-size: 36px;
   position: absolute;
-  top: 1500px;
+  top: 120px;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
 }
@@ -247,7 +223,7 @@ ul {
 #cv #cv-div {
   width: 80%;
   position: absolute;
-  top: 1600px;
+  top: 200px;
   left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,9 +271,10 @@ ul {
 }
 
 #portfolio {
-  height: 700px;
+  height: 750px;
   background-image: url("../img/peoplemover-desktop.jpg");
   background-size: 100%;
+  position: relative;
 }
 
 #portfolio #portfolio-title {
@@ -307,13 +284,13 @@ ul {
   width: 100%;
   font-size: 36px;
   position: absolute;
-  top: 2800px;
+  top: 120px;
 }
 
 #portfolio #portfolio-main {
   position: absolute;
   width: 35%;
-  top: 2880px;
+  top: 200px;
   left: 7%;
 }
 
@@ -357,10 +334,10 @@ ul {
 #portfolio #tech-div {
   font-family: 'Quicksand', sans-serif;
   font-size: 24px;
-  position: relative;
+  position: absolute;
   width: 24%;
   left: 65%;
-  top: 180px;
+  top: 200px;
   background-color: rgba(238, 195, 198, 0.75);
   padding: 0;
   margin: 0;
@@ -394,6 +371,7 @@ ul {
   height: 800px;
   background-image: url("../img/belize-desktop.jpg");
   background-size: 100%;
+  position: relative;
 }
 
 #blog #blog-title {
@@ -403,7 +381,7 @@ ul {
   width: 100%;
   font-size: 36px;
   position: absolute;
-  top: 3500px;
+  top: 120px;
 }
 
 #blog #blog-div {
