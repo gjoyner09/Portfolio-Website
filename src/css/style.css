@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   margin-top: 0;
 }
@@ -127,6 +131,7 @@ ul {
   height: 60px;
   width: 60%;
   font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
   font-size: 24px;
   color: black;
   position: absolute;
@@ -446,56 +451,47 @@ ul {
   bottom: 7px;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1300px) {
   #home #home-text {
-    font-size: 24px;
-  }
-  #home #home-text-background {
-    width: 700px;
+    font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 1150px) {
   #home #home-text {
-    font-size: 24px;
+    width: 70%;
   }
   #home #home-text-background {
-    width: 700px;
-  }
-}
-
-@media only screen and (max-width: 1150px) {
-  #home #home-text {
-    font-size: 24px;
-  }
-  #home #home-text-background {
-    width: 700px;
+    width: 70%;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  @-webkit-keyframes profpic-animation {
-    0% {
-      left: -500px;
-    }
-    100% {
-      left: 40px;
-    }
+  #home {
+    background-image: url("../img/wedding-tablet-big.jpg");
   }
-  @keyframes profpic-animation {
-    0% {
-      left: -500px;
-    }
-    100% {
-      left: 40px;
-    }
+  #home #home-text {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #home #home-text {
+    top: 350px;
+    left: 5%;
+    width: 80%;
+  }
+  #home #home-text-background {
+    top: 350px;
+    left: 5%;
+    width: 80%;
   }
   @-webkit-keyframes home-text-animation {
     0% {
       left: -5000px;
     }
     100% {
-      left: 200px;
+      left: 5%;
     }
   }
   @keyframes home-text-animation {
@@ -503,33 +499,8 @@ ul {
       left: -5000px;
     }
     100% {
-      left: 200px;
+      left: 5%;
     }
-  }
-  #home {
-    background-image: url("../img/wedding-tablet-big.jpg");
-  }
-  #home #profpic {
-    width: 130px;
-    left: 40px;
-  }
-  #home #home-text {
-    top: 200px;
-    left: 200px;
-  }
-  #home #home-text-background {
-    top: 200px;
-    left: 200px;
-    width: 685px;
-  }
-}
-
-@media only screen and (max-width: 925px) {
-  #home #home-text {
-    font-size: 20px;
-  }
-  #home #home-text-background {
-    width: 575px;
   }
 }
 
@@ -537,42 +508,40 @@ ul {
   #home {
     background-image: url("../img/wedding-tablet.jpg");
   }
-  #home #home-text-background {
-    width: 370px;
-    -webkit-animation-name: none;
-            animation-name: none;
-  }
   #home #home-text {
-    -webkit-animation-name: none;
-            animation-name: none;
-    width: 370px;
-    font-size: 24px;
+    width: 90%;
+  }
+  #home #home-text-background {
+    width: 90%;
   }
 }
 
-@media only screen and (max-width: 710px) {
-  .navbar .navbar-links {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 625px) {
-  a {
-    padding: 5px 5px;
+@media only screen and (max-width: 700px) {
+  .navbar a {
+    padding: 7px;
   }
   #home {
     background-image: url("../img/wedding-tablet-small.jpg");
   }
-  #home #home-text-background {
-    width: 300px;
-    -webkit-animation-name: none;
-            animation-name: none;
+  #home #profpic {
+    width: 23%;
   }
   #home #home-text {
-    -webkit-animation-name: none;
-            animation-name: none;
-    width: 300px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .navbar a {
     font-size: 20px;
+    padding: 5px;
+  }
+  #home #home-text {
+    width: 70%;
+    font-size: 20px;
+  }
+  #home #home-text-background {
+    width: 70%;
   }
 }
 
@@ -583,16 +552,23 @@ ul {
   #home {
     background-image: url("../img/wedding-phone.jpg");
   }
-  #home #home-text-background {
-    width: 230px;
-    -webkit-animation-name: none;
-            animation-name: none;
+  #home #profpic {
+    width: 30%;
   }
   #home #home-text {
-    -webkit-animation-name: none;
-            animation-name: none;
-    width: 230px;
-    font-size: 20px;
+    width: 85%;
+  }
+  #home #home-text-background {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar a {
+    padding: 1px;
+  }
+  .navbar .navbar-title {
+    font-size: 12px;
   }
 }
 
@@ -603,26 +579,17 @@ ul {
   .navbar .navbar-title {
     font-size: 10px;
   }
-  .navbar .navbar-links {
-    font-size: 16px;
+  .navbar a {
+    font-size: 17px;
   }
+}
+
+@media only screen and (max-width: 380px) {
   #home #profpic {
-    width: 170px;
-    top: 100px;
-    left: 30px;
+    width: 40%;
   }
   #home #home-text {
-    top: 400px;
-    left: 30px;
-    font-size: 24px;
-    width: 300px;
-    padding-top: 20px;
-  }
-  #home #home-text-background {
-    top: 400px;
-    left: 30px;
-    width: 300px;
-    height: 80px;
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
