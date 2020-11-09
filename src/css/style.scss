@@ -367,6 +367,9 @@ ul {
             font-size: 22px;
         }
     }
+    #cv {
+        background-image: url('../img/huddle-tablet.jpg');
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -376,6 +379,16 @@ ul {
         }
         #home-text-background {
             width: 70%;
+        }
+    }
+    #cv {
+        height: 1500px;
+        #cv-div {
+            .cv-img {
+                img {
+                    width: 80%;
+                }
+            }
         }
     }
 }
@@ -394,7 +407,8 @@ ul {
         }
     }
     #cv {
-        background-image: url('../img/huddle-tablet-big.jpg');
+        background-image: url('../img/huddle-tablet-small.jpg');
+        height: 1650px;
     }
     #portfolio {
         background-image: url('../img/peoplemover-tablet-big.jpg');
@@ -425,6 +439,15 @@ ul {
             left: 5%;
         }
     }
+    #cv {
+        #cv-div {
+            .cv-img {
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 825px) {
@@ -448,7 +471,8 @@ ul {
         }
     }
     #cv {
-        background-image: url('../img/huddle-tablet.jpg');
+        background-image: url('../img/huddle-mobile.jpg');
+        height: 1750px;
     }
     #portfolio {
         background-image: url('../img/peoplemover-tablet.jpg');
@@ -472,6 +496,9 @@ ul {
         #home-text {
             font-size: 18px;
         }
+    }
+    #cv {
+        height: 1900px;
     }
 }
 
@@ -498,7 +525,8 @@ ul {
         }
     }
     #cv {
-        background-image: url('../img/huddle-tablet-small.jpg');
+        background-image: url('../img/huddle-mobile-small.jpg');
+        height: 2100px;
     }
     #portfolio {
         background-image: url('../img/peoplemover-tablet-small.jpg');
@@ -538,7 +566,13 @@ ul {
         }
     }
     #cv {
-        background-image: url('../img/huddle-mobile.jpg');
+        background-image: url('../img/huddle-mobile-xs.jpg');
+        height: 2250px;
+        #cv-div {
+            left: 5%;
+            width: 90%;
+            height: 1900px;
+        }
     }
     #portfolio {
         background-image: url('../img/peoplemover-mobile.jpg');
@@ -555,6 +589,13 @@ ul {
         }
         .navbar-title {
             font-size: 12px;
+        }
+    }
+    #cv {
+        height: 2100px;
+        #cv-div {
+            font-size: 17px;
+            height: 1000px;
         }
     }
 }
@@ -583,6 +624,21 @@ ul {
             top: 370px;
         }
     }
+    #cv {
+        height: 1850px;
+        #cv-div {
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #cv {
+        height: 1800px;
+        #cv-div {
+            font-size: 14px;
+        }
+    }
 }
 
 @media only screen and (max-width: 380px) {
@@ -593,6 +649,12 @@ ul {
         }
         #home-text {
             font-size: 18px;
+        }
+    }
+    #cv {
+        height: 1750px;
+        #cv-div {
+            font-size: 13px;
         }
     }
 }
