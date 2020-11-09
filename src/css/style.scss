@@ -387,6 +387,21 @@ ul {
             font-size: 20px;
         }
     }
+    #bio {
+        background-image: url('../img/vaucluse-tablet-big.jpg');
+        #bio-text {
+            font-size: 18px;
+        }
+    }
+    #cv {
+        background-image: url('../img/huddle-tablet-big.jpg');
+    }
+    #portfolio {
+        background-image: url('../img/peoplemover-tablet-big.jpg');
+    }
+    #blog {
+        background-image: url('../img/belize-tablet-big.jpg');
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -421,6 +436,25 @@ ul {
         #home-text-background {
             width: 90%;
         }
+    }
+    #bio {
+        background-image: url('../img/vaucluse-tablet.jpg');
+        #bio-text {
+            width: 50%;
+        }
+        #cricket {
+            width: 30%;
+            left: 63%;
+        }
+    }
+    #cv {
+        background-image: url('../img/huddle-tablet.jpg');
+    }
+    #portfolio {
+        background-image: url('../img/peoplemover-tablet.jpg');
+    }
+    #blog {
+        background-image: url('../img/belize-tablet.jpg');
     }
 }
 
@@ -457,9 +491,24 @@ ul {
             width: 70%;
         }
     }
+    #bio {
+        background-image: url('../img/vaucluse-tablet-small.jpg');
+        #bio-text {
+            font-size: 16px;
+        }
+    }
+    #cv {
+        background-image: url('../img/huddle-tablet-small.jpg');
+    }
+    #portfolio {
+        background-image: url('../img/peoplemover-tablet-small.jpg');
+    }
+    #blog {
+        background-image: url('../img/belize-tablet-small.jpg');
+    }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 543px) {
     .navbar {
         .navbar-title {
             font-size: 14px;
@@ -468,7 +517,7 @@ ul {
     #home {
         background-image: url('../img/wedding-phone.jpg');
         #profpic {
-            width: 30%
+            width: 30%;
         }
         #home-text {
             width: 85%;
@@ -476,6 +525,26 @@ ul {
         #home-text-background {
             width: 85%;
         }
+    }
+    #bio {
+        background-image: url('../img/vaucluse-tablet-mobile.jpg');
+        #cricket {
+            width: 30%;
+            left: 7%;
+        }
+        #bio-text {
+            top: 400px;
+            width: 86%;
+        }
+    }
+    #cv {
+        background-image: url('../img/huddle-mobile.jpg');
+    }
+    #portfolio {
+        background-image: url('../img/peoplemover-mobile.jpg');
+    }
+    #blog {
+        background-image: url('../img/belize-mobile.jpg');
     }
 }
 
@@ -502,10 +571,23 @@ ul {
             font-size: 17px;
         }
     }
+    #home {
+        height: 700px;
+        #profpic {
+            width: 35%;
+        }
+    }
+    #bio {
+        height: 820px;
+        #bio-text {
+            top: 370px;
+        }
+    }
 }
 
 @media only screen and (max-width: 380px) {
     #home {
+        height: 670px;
         #profpic {
             width: 40%;
         }
