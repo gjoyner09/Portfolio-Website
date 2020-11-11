@@ -60,6 +60,7 @@ ul {
     padding: 0;
     // bring to front
     z-index: 2;
+    top: 0;
     a {
         color: #373636;
         padding: 14px 14px;
@@ -325,6 +326,13 @@ ul {
 
 // blog section
 #blog {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: #4E4949;
+    }
     height: 800px;
     background-image: url('../img/belize-desktop.jpg');
     background-size: 100%;
@@ -395,6 +403,25 @@ ul {
         display: inline;
         position: relative;
         bottom: 7px;
+    }
+}
+
+.blog-post {
+    position: fixed;
+    top: 100px;
+    background-color: gray;
+    h1 {
+        @include header-font;
+        text-align: center;
+    }
+    h2,
+    p {
+        @include body-font;
+        padding: 40px;
+    }
+    h2 {
+        text-align: center;
+        margin: 0;
     }
 }
 

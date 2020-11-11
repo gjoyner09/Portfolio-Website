@@ -69,6 +69,7 @@ ul {
   margin: 0;
   padding: 0;
   z-index: 2;
+  top: 0;
 }
 
 .navbar a {
@@ -376,6 +377,15 @@ ul {
   position: relative;
 }
 
+#blog a {
+  text-decoration: none;
+  color: black;
+}
+
+#blog a:hover {
+  color: #4E4949;
+}
+
 #blog #blog-title {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
@@ -446,6 +456,29 @@ ul {
   display: inline;
   position: relative;
   bottom: 7px;
+}
+
+.blog-post {
+  position: fixed;
+  top: 100px;
+  background-color: gray;
+}
+
+.blog-post h1 {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blog-post h2,
+.blog-post p {
+  font-family: 'Quicksand', sans-serif;
+  padding: 40px;
+}
+
+.blog-post h2 {
+  text-align: center;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1300px) {
