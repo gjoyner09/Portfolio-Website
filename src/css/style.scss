@@ -215,8 +215,8 @@ ul {
 }
 
 #portfolio {
-    height: 750px;
-    background-image: url('../img/peoplemover-desktop.jpg');
+    height: 800px;
+    background-image: url('../img/peoplemover-desktop-v2.jpg');
     background-size: 100%;
     position: relative;
     #portfolio-title {
@@ -391,6 +391,19 @@ ul {
             }
         }
     }
+    #portfolio {
+        background-image: url('../img/peoplemover-tablet-big.jpg');
+        #portfolio-main {
+            width: 40%;
+        }
+        #tech-div {
+            width: 29%;
+            left: 61%;
+        }
+    }
+    #blog {
+        background-image: url('../img/belize-tablet-big.jpg');
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -409,12 +422,6 @@ ul {
     #cv {
         background-image: url('../img/huddle-tablet-small.jpg');
         height: 1650px;
-    }
-    #portfolio {
-        background-image: url('../img/peoplemover-tablet-big.jpg');
-    }
-    #blog {
-        background-image: url('../img/belize-tablet-big.jpg');
     }
 }
 
@@ -479,6 +486,10 @@ ul {
     }
     #blog {
         background-image: url('../img/belize-tablet.jpg');
+        #blog-div {
+            left: 7%;
+            width: 86%;
+        }
     }
 }
 
@@ -499,6 +510,18 @@ ul {
     }
     #cv {
         height: 1900px;
+    }
+    #portfolio {
+        background-image: url('../img/peoplemover-tablet-small.jpg');
+        #portfolio-main {
+            width: 47%;
+            #portfolio-text {
+                font-size: 18px;
+            }
+        }
+        #tech-div {
+            width: 32%;
+        }
     }
 }
 
@@ -528,11 +551,36 @@ ul {
         background-image: url('../img/huddle-mobile-small.jpg');
         height: 2100px;
     }
-    #portfolio {
-        background-image: url('../img/peoplemover-tablet-small.jpg');
-    }
     #blog {
         background-image: url('../img/belize-tablet-small.jpg');
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #portfolio {
+        background-image: url('../img/peoplemover-mobile-small.jpg');
+        height: 1000px;
+        #portfolio-main {
+            width: 83%;
+            height: 900px;
+            font-size: 16px;
+        }
+        #tech-div {
+            top: 750px;
+            left: 7%;
+            width: 86%;
+            .tech-img {
+                width: 14%;
+                padding: 1%;
+            }
+        }
+    }
+    #blog {
+        #blog-div {
+            font-size: 16px;
+            left: 4%;
+            width: 92%;
+        }
     }
 }
 
@@ -573,9 +621,6 @@ ul {
             width: 90%;
             height: 1900px;
         }
-    }
-    #portfolio {
-        background-image: url('../img/peoplemover-mobile.jpg');
     }
     #blog {
         background-image: url('../img/belize-mobile.jpg');
@@ -628,6 +673,22 @@ ul {
         height: 1850px;
         #cv-div {
             font-size: 15px;
+        }
+    }
+    #blog {
+        #blog-div {
+            font-size: 14px;
+        }
+    }
+    #portfolio {
+        height: 950px;
+        #portfolio-main {
+            #portfolio-text {
+                font-size: 14px;
+            }
+        }
+        #tech-div {
+            top: 700px;
         }
     }
 }
