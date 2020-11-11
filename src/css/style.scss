@@ -1,7 +1,17 @@
+@mixin header-font {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+}
+
+@mixin body-font {
+    font-family: 'Quicksand', sans-serif;
+}
+
 body {
     margin: 0;
 }
 
+// smooth scrolling links
 html {
     scroll-behavior: smooth;
 }
@@ -14,22 +24,11 @@ a {
     text-decoration: none;
 }
 
-.navbar {
-    a {
-        color: #373636;
-        padding: 14px 14px;
-        border-bottom: solid #B9B9B9;
-        text-decoration: none;
-    }
-    a:hover {
-        border-bottom: solid #373636;
-    }
-}
-
 ul {
     margin-top: 0;
 }
 
+// animation for profile picture on homepage
 @keyframes profpic-animation {
     0% {
         left: -500px
@@ -39,6 +38,7 @@ ul {
     }
 }
 
+// animation for text on homepage
 @keyframes home-text-animation {
     0% {
         left: -5000px;
@@ -48,7 +48,9 @@ ul {
     }
 }
 
+// fixed top navbar
 .navbar {
+    @include header-font;
     display: flex;
     position: fixed;
     align-items: center;
@@ -56,45 +58,56 @@ ul {
     background-color: #B9B9B9;
     margin: 0;
     padding: 0;
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
+    // bring to front
     z-index: 2;
+    a {
+        color: #373636;
+        padding: 14px 14px;
+        border-bottom: solid #B9B9B9;
+        text-decoration: none;
+    }
+    // underline when hovered
+    a:hover {
+        border-bottom: solid #373636;
+    }
     .navbar-div {
         display: flex;
     }
+    // Grey Joyner title
     .navbar-title {
         padding-left: 20px;
         text-align: center;
         width: 35%
     }
+    // links
     .navbar-links {
         display: flex;
         padding-right: 20px;
         justify-content: flex-end;
-        font-weight: bold;
         font-size: 24px;
         width: 65%;
     }
 }
 
+// home section
 #home {
     height: 800px;
     background-image: url('../img/wedding.jpg');
     background-size: 100vw;
-    display: grid;
     #profpic {
         width: 17%;
         border-radius: 40px;
         position: absolute;
         top: 130px;
         left: 5%;
+        // intro animation for profile picture
         animation-name: profpic-animation;
         animation-duration: 1s;
     }
     #home-text {
         height: 60px;
         width: 60%;
-        font-family: 'Quicksand', sans-serif;
+        @include body-font;
         font-weight: bold;
         font-size: 24px;
         color: black;
@@ -105,6 +118,7 @@ ul {
         border-radius: 10px;
         display: flex;
         align-items: center;
+        // intro animation for text on homepage
         animation-name: home-text-animation;
         animation-duration: 2.5s;
     }
@@ -117,19 +131,21 @@ ul {
         top: 230px;
         left: 25%;
         border-radius: 10px;
+        // animation for text background on homepage (separate so that animation can be at a different time)
         animation-name: home-text-animation;
         animation-duration: 2s;
     }
 }
 
+// bio section
 #bio {
     height: 800px;
     background-image: url('../img/vaucluse-desktop.jpg');
     background-size: 100%;
     position: relative;
+    // 'Bio' header title in the bio section
     #bio-title {
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
+        @include header-font;
         text-align: center;
         width: 100%;
         margin: 0;
@@ -138,18 +154,20 @@ ul {
         position: absolute;
         top: 120px;
     }
+    // bio content
     #bio-text {
         position: absolute;
         left: 7%;
         top: 200px;
         width: 35%;
-        font-family: 'Quicksand', sans-serif;
+        @include body-font;
         font-size: 20px;
         color: black;
         padding: 10px;
         border-radius: 10px;
         background-color: rgba(238, 195, 198, 0.75);
     }
+    // photo on bio page
     #cricket {
         width: 22%;
         border-radius: 40px;
@@ -159,22 +177,24 @@ ul {
     }
 }
 
+// cv section
 #cv {
     height: 1400px;
     background-image: url('../img/huddle-desktop.jpg');
     background-size: 100%;
-    font-family: 'Quicksand', sans-serif;
+    @include body-font;
     font-size: 18px;
     position: relative;
+    // 'CV' header title on cv section
     #cv-title {
         text-align: center;
         width: 100%;
         font-size: 36px;
         position: absolute;
         top: 120px;
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
+        @include header-font;
     }
+    // cv content
     #cv-div {
         width: 80%;
         position: absolute;
@@ -182,6 +202,7 @@ ul {
         left: 10%;
         display: flex;
         flex-wrap: wrap;
+        // company logos in cv page
         .cv-img {
             width: 20%;
             margin-bottom: 30px;
@@ -192,19 +213,23 @@ ul {
         }
         .cv-text {
             width: 80%;
+            // allow items to stack on top of each other
             display: grid;
             margin-bottom: 30px;
+            // allow items to stack on top of each other
             .cv-text-1,
             .cv-text-2 {
                 grid-column: 1;
                 grid-row: 1;
             }
+            // background color for cv content
             .cv-text-1 {
                 background-color: rgba(238, 195, 198, 0.75);
                 border-radius: 10px;
                 width: 100%;
                 height: 100%;
             }
+            // cv text
             .cv-text-2 {
                 z-index: 1;
                 padding: 10px;
@@ -214,20 +239,22 @@ ul {
     }
 }
 
+// portfolio section
 #portfolio {
     height: 800px;
     background-image: url('../img/peoplemover-desktop-v2.jpg');
     background-size: 100%;
     position: relative;
+    // 'Portfolio' header title on portfolio section
     #portfolio-title {
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
+        @include header-font;
         text-align: center;
         width: 100%;
         font-size: 36px;
         position: absolute;
         top: 120px;
     }
+    // portfolio content
     #portfolio-main {
         position: absolute;
         width: 35%;
@@ -235,7 +262,7 @@ ul {
         left: 7%;
         #portfolio-text {
             width: 100%;
-            font-family: 'Quicksand', sans-serif;
+            @include body-font;
             font-size: 20px;
             position: absolute;
             padding: 10px;
@@ -248,12 +275,14 @@ ul {
                 display: flex;
                 width: 50%;
                 margin-bottom: 10px;
+                // portfolio images
                 img {
                     width: 95%;
                     height: 100%;
                     margin-left: auto;
                     margin-right: auto;
                 }
+                // portfolio descriptions
                 p {
                     width: 95%;
                     margin-left: auto;
@@ -262,8 +291,9 @@ ul {
             }
         }
     }
+    // tech stack content
     #tech-div {
-        font-family: 'Quicksand', sans-serif;
+        @include body-font;
         font-size: 24px;
         position: absolute;
         width: 24%;
@@ -293,20 +323,22 @@ ul {
     }
 }
 
+// blog section
 #blog {
     height: 800px;
     background-image: url('../img/belize-desktop.jpg');
     background-size: 100%;
     position: relative;
+    // 'Blog' header title on blog section
     #blog-title {
-        font-family: 'Poiret One', cursive;
-        font-weight: bold;
+        @include header-font;
         text-align: center;
         width: 100%;
         font-size: 36px;
         position: absolute;
         top: 120px;
     }
+    // blog content
     #blog-div {
         position: relative;
         top: 200px;
@@ -317,8 +349,9 @@ ul {
         background-color: rgba(238, 195, 198, 0.75);
         border-radius: 10px;
         padding-top: 20px;
-        font-family: 'Quicksand', sans-serif;
+        @include body-font;
         font-size: 20px;
+        // pics on blog page
         .blog-pic {
             width: 33.3%;
             text-align: center;
@@ -326,6 +359,7 @@ ul {
                 width: 80%;
             }
         }
+        // descriptions of blog posts
         .blog-text {
             width: 33.3%;
             p {
@@ -337,23 +371,26 @@ ul {
     }
 }
 
+// fixed bottom footer with contact info
 #footer-id {
     position: fixed;
+    // fix to bottom
     bottom: 0;
     width: 100%;
     background-color: #B9B9B9;
     color: black;
     text-align: right;
-    font-family: 'Poiret One', cursive;
-    font-weight: bold;
+    @include header-font;
     font-size: 20px;
     height: 30px;
+    // bring to front
     z-index: 2;
     img {
         height: 100%
     }
     padding-top: 5px;
     padding-bottom: 5px;
+    // 'Contact' text
     div {
         display: inline;
         position: relative;
@@ -361,6 +398,7 @@ ul {
     }
 }
 
+// media queries (lots of different ones to attempt to make each view size look as good as possible)
 @media only screen and (max-width: 1300px) {
     #home {
         #home-text {
@@ -630,7 +668,7 @@ ul {
 @media only screen and (max-width: 480px) {
     .navbar {
         a {
-            padding: 1px;
+            padding: 4px;
         }
         .navbar-title {
             font-size: 12px;
@@ -703,6 +741,14 @@ ul {
 }
 
 @media only screen and (max-width: 380px) {
+    .navbar {
+        .navbar-title {
+            font-size: 9px;
+        }
+        a {
+            font-size: 16px;
+        }
+    }
     #home {
         height: 670px;
         #profpic {
@@ -710,6 +756,11 @@ ul {
         }
         #home-text {
             font-size: 18px;
+        }
+    }
+    #bio {
+        #bio-text {
+            font-size: 15px;
         }
     }
     #cv {

@@ -14,17 +14,6 @@ a {
   text-decoration: none;
 }
 
-.navbar a {
-  color: #373636;
-  padding: 14px 14px;
-  border-bottom: solid #B9B9B9;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  border-bottom: solid #373636;
-}
-
 ul {
   margin-top: 0;
 }
@@ -66,6 +55,8 @@ ul {
 }
 
 .navbar {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,9 +68,18 @@ ul {
   background-color: #B9B9B9;
   margin: 0;
   padding: 0;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
   z-index: 2;
+}
+
+.navbar a {
+  color: #373636;
+  padding: 14px 14px;
+  border-bottom: solid #B9B9B9;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border-bottom: solid #373636;
 }
 
 .navbar .navbar-div {
@@ -102,7 +102,6 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-weight: bold;
   font-size: 24px;
   width: 65%;
 }
@@ -111,8 +110,6 @@ ul {
   height: 800px;
   background-image: url("../img/wedding.jpg");
   background-size: 100vw;
-  display: -ms-grid;
-  display: grid;
 }
 
 #home #profpic {
@@ -701,7 +698,7 @@ ul {
 
 @media only screen and (max-width: 480px) {
   .navbar a {
-    padding: 1px;
+    padding: 4px;
   }
   .navbar .navbar-title {
     font-size: 12px;
@@ -767,6 +764,12 @@ ul {
 }
 
 @media only screen and (max-width: 380px) {
+  .navbar .navbar-title {
+    font-size: 9px;
+  }
+  .navbar a {
+    font-size: 16px;
+  }
   #home {
     height: 670px;
   }
@@ -775,6 +778,9 @@ ul {
   }
   #home #home-text {
     font-size: 18px;
+  }
+  #bio #bio-text {
+    font-size: 15px;
   }
   #cv {
     height: 1750px;
