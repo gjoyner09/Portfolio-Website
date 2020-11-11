@@ -180,7 +180,7 @@ ul {
 
 // cv section
 #cv {
-    height: 1400px;
+    height: 1450px;
     background-image: url('../img/huddle-desktop.jpg');
     background-size: 100%;
     @include body-font;
@@ -236,6 +236,18 @@ ul {
                 padding: 10px;
                 padding-top: 20px;
             }
+        }
+    }
+    #cv-link {
+        @include body-font;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #4E4949;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 3px;
+        a {
+            color: white;
         }
     }
 }
@@ -447,7 +459,7 @@ ul {
         }
     }
     #cv {
-        height: 1500px;
+        height: 1550px;
         #cv-div {
             .cv-img {
                 img {
@@ -512,6 +524,7 @@ ul {
         }
     }
     #cv {
+        height: 1700px;
         #cv-div {
             .cv-img {
                 img {
@@ -544,7 +557,7 @@ ul {
     }
     #cv {
         background-image: url('../img/huddle-mobile.jpg');
-        height: 1750px;
+        height: 1800px;
     }
     #portfolio {
         background-image: url('../img/peoplemover-tablet.jpg');
@@ -710,7 +723,7 @@ ul {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 430px) {
     a {
         padding: 2px 2px;
     }
@@ -735,7 +748,7 @@ ul {
         }
     }
     #cv {
-        height: 1850px;
+        height: 1900px;
         #cv-div {
             font-size: 15px;
         }
@@ -760,14 +773,14 @@ ul {
 
 @media only screen and (max-width: 400px) {
     #cv {
-        height: 1800px;
+        height: 1850px;
         #cv-div {
             font-size: 14px;
         }
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 385px) {
     .navbar {
         .navbar-title {
             font-size: 9px;
