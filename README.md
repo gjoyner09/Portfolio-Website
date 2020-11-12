@@ -23,7 +23,7 @@
 
 **Sitemap:**
 
-![Sitemap](docs/sitemap.drawio)
+![Sitemap](src/img/sitemap.jpg)
 
 
 **Screenshots:**
