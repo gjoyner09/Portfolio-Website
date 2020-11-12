@@ -1,0 +1,171 @@
+commit 9e2231075d48e1b836f3ca5c67a5bea2aa4584d5
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Thu Nov 12 12:21:19 2020 +1100
+
+    final changes
+
+commit c73129980aa43da5c8566c873885c8b31a9944f2
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Thu Nov 12 12:02:11 2020 +1100
+
+    added screenshots and SRI
+
+commit af326d36981b8f9eb5691ed3e953c03951759164
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Thu Nov 12 10:08:33 2020 +1100
+
+    final changes
+
+commit 23643663674c0d600039fe0a47622cf37648ef14
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Wed Nov 11 18:27:47 2020 +1100
+
+    added blog pages
+
+commit 1b091c7c23b39a655c6edda1f039f08dfe5ba589
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Wed Nov 11 15:07:43 2020 +1100
+
+    draft2 edits
+
+commit a404cc6e6dee883d82ceb390dc501f07da257e80
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Wed Nov 11 12:06:44 2020 +1100
+
+    finished first draft
+
+commit 6f22a05ff559deee208ac55edddba5865ae1557f
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Mon Nov 9 21:35:42 2020 +1100
+
+    cv media queries
+
+commit fd052d9d5e42135d7d521c849245bebb5486d949
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Mon Nov 9 15:29:31 2020 +1100
+
+    further responsive design
+
+commit 124a40122bca5495b04fbae6bfa76e39c9129458
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sun Nov 8 15:30:10 2020 +1100
+
+    responsive formatting
+
+commit 7d4401aaabe5681c8656ddc8927b2acaee96f636
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sat Nov 7 18:17:22 2020 +1100
+
+    fixed rest of formatting issues
+
+commit 142f5c2fd1931768582fdd300b911164ca6d19fb
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sat Nov 7 16:42:51 2020 +1100
+
+    changed colors
+
+commit a560cb18acc6a9f23fefc6379ce3bafb2f654ba2
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sat Nov 7 16:12:27 2020 +1100
+
+    finished desktop view
+
+commit 16422378b36985be2c99b21ca74e96e516ce9525
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sat Nov 7 14:54:49 2020 +1100
+
+    fixed formatting
+
+commit 32a7bf7b2fe41e5318d875b4a68a60aaea2c5c2e
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Fri Nov 6 16:03:21 2020 +1100
+
+    more secondary updates
+
+commit 4a576617af731e1220f593498cd039300db28089
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Fri Nov 6 15:25:03 2020 +1100
+
+    further builds to secondary pages
+
+commit 1b7d84d4f8c3800a75f03f85edbe7afcad9219df
+Merge: 8cb066a 526c80a
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Fri Nov 6 09:08:53 2020 +1100
+
+    updated secondary pages
+
+commit 8cb066a4e6da2f35b0ac9eec47fb1e7bd107788f
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Thu Nov 5 16:26:59 2020 +1100
+
+    continued building out secondary pages and footer
+
+commit bc30beb678831a02ffc50564faae1ce46405ddaa
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Thu Nov 5 14:23:57 2020 +1100
+
+    built out bio page
+
+commit e21d77666547948e2b56e728604768026b0a59cf
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Thu Nov 5 11:33:55 2020 +1100
+
+    responsive view
+
+commit 526c80ad1300ee650ed78747c185a63fe99670a1
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Thu Nov 5 09:32:13 2020 +1100
+
+    updated navbar
+
+commit c13cd61f2c1fc048134fe024351afb91e1a68680
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sat Oct 31 16:56:43 2020 +1100
+
+    moved index file
+
+commit a83e19c294d89b31caa366122829540210c3ebf2
+Merge: c0b90a0 6a25dc0
+Author: gjoyner09 <72596140+gjoyner09@users.noreply.github.com>
+Date:   Sat Oct 31 16:47:01 2020 +1100
+
+    Merge pull request #1 from gjoyner09/index
+    
+    built out homepage
+
+commit 6a25dc0800ce160bbcb947bddb6bdeda07047147
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sat Oct 31 16:44:24 2020 +1100
+
+    built out homepage
+
+commit c0b90a06f27f84a9c4cda02d39af8687b62f8a00
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Sat Oct 31 13:45:56 2020 +1100
+
+    started building out index
+
+commit a6ae03956c9bb32c5829772d3dec945c94a7362e
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Fri Oct 30 16:56:26 2020 +1100
+
+    new commit to test ssh key
+
+commit 69f7de09852eb6873528e5d0776925c886579910
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Fri Oct 30 16:29:16 2020 +1100
+
+    linked scss to css
+
+commit a5751731a5bc82178dec0ceeb090b1ba62b99880
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Fri Oct 30 14:57:56 2020 +1100
+
+    fixed file structure
+
+commit d144ec3735db9e8c849928c39eddfbc7202f9d7b
+Author: gjoyner09 <gjoyner09@gmail.com>
+Date:   Fri Oct 30 14:35:02 2020 +1100
+
+    initial commit
