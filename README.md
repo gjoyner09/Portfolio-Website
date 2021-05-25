@@ -19,23 +19,4 @@
 
 **Target audience:** potential software development employers
 
-**Tech stack:** HTML, CSS, SCSS, Git, Github, Netlify (for deployment)
-
-**Sitemap:**
-
-![Sitemap](src/img/sitemap.jpg)
-
-
-**Screenshots:**
-
-![Screenshot 1](src/img/screenshot1.jpg)
-
-![Screenshot 2](src/img/screenshot2.jpg)
-
-![Screenshot 3](src/img/screenshot3.jpg)
-
-![Screenshot 4](src/img/screenshot4.jpg)
-
-![Screenshot 5](src/img/screenshot5.jpg)
-
-![Screenshot 6](src/img/screenshot6.jpg)
+**Tech stack:** HTML, CSS, SCSS, Netlify (for deployment)
