@@ -108,9 +108,9 @@ ul {
 }
 
 #home {
-  height: 800px;
-  background-image: url("../img/wedding.jpg");
-  background-size: 100vw;
+  height: 100vh;
+  background: url("../img/wedding.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 #home #profpic {
@@ -166,8 +166,9 @@ ul {
 
 #bio {
   height: 800px;
-  background-image: url("../img/vaucluse-desktop.jpg");
-  background-size: 100%;
+  min-height: 100vh;
+  background: url("../img/vaucluse-desktop.jpg") no-repeat center center fixed;
+  background-size: cover;
   position: relative;
 }
 
@@ -176,11 +177,12 @@ ul {
   font-weight: bold;
   text-align: center;
   width: 100%;
-  margin: 0;
+  margin: auto;
   padding: 0;
+  padding: 1rem;
   font-size: 36px;
-  position: absolute;
   top: 120px;
+  background-color: rgba(238, 195, 198, 0.75);
 }
 
 #bio #bio-text {
@@ -205,9 +207,10 @@ ul {
 }
 
 #cv {
-  height: 1450px;
-  background-image: url("../img/huddle-desktop.jpg");
-  background-size: 100%;
+  height: 1700px;
+  min-height: 100vh;
+  background: url("../img/huddle-desktop.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   position: relative;
@@ -216,11 +219,12 @@ ul {
 #cv #cv-title {
   text-align: center;
   width: 100%;
+  margin: auto;
+  padding: 1rem;
   font-size: 36px;
-  position: absolute;
-  top: 120px;
   font-family: 'Poiret One', cursive;
   font-weight: bold;
+  background-color: rgba(238, 195, 198, 0.75);
 }
 
 #cv #cv-div {
@@ -289,8 +293,9 @@ ul {
 
 #portfolio {
   height: 800px;
-  background-image: url("../img/peoplemover-desktop-v2.jpg");
-  background-size: 100%;
+  min-height: 100vh;
+  background: url("../img/peoplemover-desktop-v2.jpg") no-repeat center center fixed;
+  background-size: cover;
   position: relative;
 }
 
@@ -299,9 +304,10 @@ ul {
   font-weight: bold;
   text-align: center;
   width: 100%;
+  margin: auto;
+  padding: 1rem;
   font-size: 36px;
-  position: absolute;
-  top: 120px;
+  background-color: rgba(238, 195, 198, 0.75);
 }
 
 #portfolio #portfolio-main {
@@ -386,8 +392,9 @@ ul {
 
 #blog {
   height: 800px;
-  background-image: url("../img/belize-desktop.jpg");
-  background-size: 100%;
+  min-height: 100vh;
+  background: url("../img/belize-desktop.jpg") no-repeat center center fixed;
+  background-size: cover;
   position: relative;
 }
 
@@ -405,9 +412,10 @@ ul {
   font-weight: bold;
   text-align: center;
   width: 100%;
+  margin: auto;
+  padding: 1rem;
   font-size: 36px;
-  position: absolute;
-  top: 120px;
+  background-color: rgba(238, 195, 198, 0.75);
 }
 
 #blog #blog-div {
@@ -493,6 +501,12 @@ ul {
 .blog-post h2 {
   text-align: center;
   margin: 0;
+}
+
+@media only screen and (max-width: 1800px) {
+  #cv {
+    height: 1450px;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
