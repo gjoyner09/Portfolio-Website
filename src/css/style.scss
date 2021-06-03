@@ -342,8 +342,8 @@ ul {
     }
 }
 
-// blog section
-#blog {
+// location section
+#location {
     a {
         text-decoration: none;
         color: black;
@@ -351,13 +351,12 @@ ul {
     a:hover {
         color: #4E4949;
     }
-    height: 800px;
-    min-height: 100vh;
+    height: 100vh;
     background: url('../img/belize-desktop.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
-    // 'Blog' header title on blog section
-    #blog-title {
+    // 'Location' header title on location section
+    #location-title {
         @include header-font;
         text-align: center;
         width: 100%;
@@ -366,41 +365,19 @@ ul {
         font-size: 36px;
         background-color: rgba(238, 195, 198, 0.75);
     }
-    // blog content
-    #blog-div {
-        position: relative;
-        top: 200px;
-        left: 15%;
+    #map-div {
         width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: rgba(238, 195, 198, 0.75);
-        border-radius: 10px;
-        padding-top: 20px;
-        @include body-font;
-        font-size: 20px;
-        // pics on blog page
-        .blog-pic {
-            width: 33.3%;
-            text-align: center;
-            img {
-                width: 80%;
-            }
-        }
-        // descriptions of blog posts
-        .blog-text {
-            width: 33.3%;
-            p {
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            }
+        margin: auto;
+        iframe {
+            width: 100%;
+            height: 70vh;
+            padding-top: 4rem;
         }
     }
 }
 
 // fixed bottom footer with contact info
-#footer-id {
+footer {
     position: fixed;
     // fix to bottom
     bottom: 0;
@@ -423,25 +400,6 @@ ul {
         display: inline;
         position: relative;
         bottom: 7px;
-    }
-}
-
-.blog-post {
-    position: fixed;
-    top: 100px;
-    background-color: gray;
-    h1 {
-        @include header-font;
-        text-align: center;
-    }
-    h2,
-    p {
-        @include body-font;
-        padding: 40px;
-    }
-    h2 {
-        text-align: center;
-        margin: 0;
     }
 }
 
@@ -561,8 +519,8 @@ ul {
     #cv {
         height: 1800px;
     }
-    #blog {
-        #blog-div {
+    #location {
+        #location-div {
             left: 7%;
             width: 86%;
         }
@@ -643,8 +601,8 @@ ul {
             }
         }
     }
-    #blog {
-        #blog-div {
+    #location {
+        #location-div {
             font-size: 16px;
             left: 4%;
             width: 92%;
@@ -737,8 +695,8 @@ ul {
             font-size: 15px;
         }
     }
-    #blog {
-        #blog-div {
+    #location {
+        #location-div {
             font-size: 14px;
         }
     }

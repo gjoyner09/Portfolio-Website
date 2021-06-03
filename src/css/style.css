@@ -390,24 +390,23 @@ ul {
   margin: 0;
 }
 
-#blog {
-  height: 800px;
-  min-height: 100vh;
+#location {
+  height: 100vh;
   background: url("../img/belize-desktop.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
 }
 
-#blog a {
+#location a {
   text-decoration: none;
   color: black;
 }
 
-#blog a:hover {
+#location a:hover {
   color: #4E4949;
 }
 
-#blog #blog-title {
+#location #location-title {
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   text-align: center;
@@ -418,43 +417,18 @@ ul {
   background-color: rgba(238, 195, 198, 0.75);
 }
 
-#blog #blog-div {
-  position: relative;
-  top: 200px;
-  left: 15%;
+#location #map-div {
   width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: rgba(238, 195, 198, 0.75);
-  border-radius: 10px;
-  padding-top: 20px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+  margin: auto;
 }
 
-#blog #blog-div .blog-pic {
-  width: 33.3%;
-  text-align: center;
+#location #map-div iframe {
+  width: 100%;
+  height: 70vh;
+  padding-top: 4rem;
 }
 
-#blog #blog-div .blog-pic img {
-  width: 80%;
-}
-
-#blog #blog-div .blog-text {
-  width: 33.3%;
-}
-
-#blog #blog-div .blog-text p {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#footer-id {
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -470,37 +444,14 @@ ul {
   padding-bottom: 5px;
 }
 
-#footer-id img {
+footer img {
   height: 100%;
 }
 
-#footer-id div {
+footer div {
   display: inline;
   position: relative;
   bottom: 7px;
-}
-
-.blog-post {
-  position: fixed;
-  top: 100px;
-  background-color: gray;
-}
-
-.blog-post h1 {
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  text-align: center;
-}
-
-.blog-post h2,
-.blog-post p {
-  font-family: 'Quicksand', sans-serif;
-  padding: 40px;
-}
-
-.blog-post h2 {
-  text-align: center;
-  margin: 0;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -601,7 +552,7 @@ ul {
   #cv {
     height: 1800px;
   }
-  #blog #blog-div {
+  #location #location-div {
     left: 7%;
     width: 86%;
   }
@@ -669,7 +620,7 @@ ul {
     width: 14%;
     padding: 1%;
   }
-  #blog #blog-div {
+  #location #location-div {
     font-size: 16px;
     left: 4%;
     width: 92%;
@@ -751,7 +702,7 @@ ul {
   #cv #cv-div {
     font-size: 15px;
   }
-  #blog #blog-div {
+  #location #location-div {
     font-size: 14px;
   }
   #portfolio {

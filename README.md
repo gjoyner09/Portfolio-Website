@@ -12,8 +12,8 @@
 - Bio page with a description of myself
 - CV page with detail of my work and study experience
 - Portfolio page with work examples and tech stack
-- Blog page with links to blog posts
-- Blog post pages with blog post text
+- Location page with links to location posts
+- Location post pages with location post text
 - Fixed header with links to different pages
 - Fixed footer with contact links to LinkedIn, Twitter, Github and email
 
