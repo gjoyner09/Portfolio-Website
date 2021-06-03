@@ -92,9 +92,9 @@ ul {
 
 // home section
 #home {
-    height: 800px;
-    background-image: url('../img/wedding.jpg');
-    background-size: 100vw;
+    height: 100vh;
+    background: url('../img/wedding.jpg') no-repeat center center fixed;
+    background-size: cover;
     #profpic {
         width: 17%;
         border-radius: 40px;
@@ -141,19 +141,21 @@ ul {
 // bio section
 #bio {
     height: 800px;
-    background-image: url('../img/vaucluse-desktop.jpg');
-    background-size: 100%;
+    min-height: 100vh;
+    background: url('../img/vaucluse-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
     position: relative;
     // 'Bio' header title in the bio section
     #bio-title {
         @include header-font;
         text-align: center;
         width: 100%;
-        margin: 0;
+        margin: auto;
         padding: 0;
+        padding: 1rem;
         font-size: 36px;
-        position: absolute;
         top: 120px;
+        background-color: rgba(238, 195, 198, 0.75);
     }
     // bio content
     #bio-text {
@@ -180,9 +182,10 @@ ul {
 
 // cv section
 #cv {
-    height: 1450px;
-    background-image: url('../img/huddle-desktop.jpg');
-    background-size: 100%;
+    height: 1700px;
+    min-height: 100vh;
+    background: url('../img/huddle-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
     @include body-font;
     font-size: 18px;
     position: relative;
@@ -190,10 +193,11 @@ ul {
     #cv-title {
         text-align: center;
         width: 100%;
+        margin: auto;
+        padding: 1rem;
         font-size: 36px;
-        position: absolute;
-        top: 120px;
         @include header-font;
+        background-color: rgba(238, 195, 198, 0.75);
     }
     // cv content
     #cv-div {
@@ -255,17 +259,19 @@ ul {
 // portfolio section
 #portfolio {
     height: 800px;
-    background-image: url('../img/peoplemover-desktop-v2.jpg');
-    background-size: 100%;
+    min-height: 100vh;
+    background: url('../img/peoplemover-desktop-v2.jpg') no-repeat center center fixed;
+    background-size: cover;
     position: relative;
     // 'Portfolio' header title on portfolio section
     #portfolio-title {
         @include header-font;
         text-align: center;
         width: 100%;
+        margin: auto;
+        padding: 1rem;
         font-size: 36px;
-        position: absolute;
-        top: 120px;
+        background-color: rgba(238, 195, 198, 0.75);
     }
     // portfolio content
     #portfolio-main {
@@ -346,17 +352,19 @@ ul {
         color: #4E4949;
     }
     height: 800px;
-    background-image: url('../img/belize-desktop.jpg');
-    background-size: 100%;
+    min-height: 100vh;
+    background: url('../img/belize-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
     position: relative;
     // 'Blog' header title on blog section
     #blog-title {
         @include header-font;
         text-align: center;
         width: 100%;
+        margin: auto;
+        padding: 1rem;
         font-size: 36px;
-        position: absolute;
-        top: 120px;
+        background-color: rgba(238, 195, 198, 0.75);
     }
     // blog content
     #blog-div {
@@ -438,14 +446,18 @@ ul {
 }
 
 // media queries (lots of different ones to attempt to make each view size look as good as possible)
+
+@media only screen and (max-width: 1800px) {
+    #cv {
+        height: 1450px;
+    }
+}
+
 @media only screen and (max-width: 1300px) {
     #home {
         #home-text {
             font-size: 22px;
         }
-    }
-    #cv {
-        background-image: url('../img/huddle-tablet.jpg');
     }
 }
 
@@ -469,7 +481,6 @@ ul {
         }
     }
     #portfolio {
-        background-image: url('../img/peoplemover-tablet-big.jpg');
         #portfolio-main {
             width: 40%;
         }
@@ -478,26 +489,20 @@ ul {
             left: 61%;
         }
     }
-    #blog {
-        background-image: url('../img/belize-tablet-big.jpg');
-    }
 }
 
 @media only screen and (max-width: 1000px) {
     #home {
-        background-image: url('../img/wedding-tablet-big.jpg');
         #home-text {
             font-size: 20px;
         }
     }
     #bio {
-        background-image: url('../img/vaucluse-tablet-big.jpg');
         #bio-text {
             font-size: 18px;
         }
     }
     #cv {
-        background-image: url('../img/huddle-tablet-small.jpg');
         height: 1650px;
     }
 }
@@ -537,7 +542,6 @@ ul {
 
 @media only screen and (max-width: 825px) {
     #home {
-        background-image: url('../img/wedding-tablet.jpg');
         #home-text {
             width: 90%;
         }
@@ -546,7 +550,6 @@ ul {
         }
     }
     #bio {
-        background-image: url('../img/vaucluse-tablet.jpg');
         #bio-text {
             width: 50%;
         }
@@ -556,14 +559,9 @@ ul {
         }
     }
     #cv {
-        background-image: url('../img/huddle-mobile.jpg');
         height: 1800px;
     }
-    #portfolio {
-        background-image: url('../img/peoplemover-tablet.jpg');
-    }
     #blog {
-        background-image: url('../img/belize-tablet.jpg');
         #blog-div {
             left: 7%;
             width: 86%;
@@ -578,7 +576,6 @@ ul {
         }
     }
     #home {
-        background-image: url('../img/wedding-tablet-small.jpg');
         #profpic {
             width: 23%;
         }
@@ -590,7 +587,6 @@ ul {
         height: 1900px;
     }
     #portfolio {
-        background-image: url('../img/peoplemover-tablet-small.jpg');
         #portfolio-main {
             width: 47%;
             #portfolio-text {
@@ -620,23 +616,17 @@ ul {
         }
     }
     #bio {
-        background-image: url('../img/vaucluse-tablet-small.jpg');
         #bio-text {
             font-size: 16px;
         }
     }
     #cv {
-        background-image: url('../img/huddle-mobile-small.jpg');
         height: 2100px;
-    }
-    #blog {
-        background-image: url('../img/belize-tablet-small.jpg');
     }
 }
 
 @media only screen and (max-width: 580px) {
     #portfolio {
-        background-image: url('../img/peoplemover-mobile-small.jpg');
         height: 1000px;
         #portfolio-main {
             width: 83%;
@@ -669,7 +659,6 @@ ul {
         }
     }
     #home {
-        background-image: url('../img/wedding-phone.jpg');
         #profpic {
             width: 30%;
         }
@@ -681,7 +670,6 @@ ul {
         }
     }
     #bio {
-        background-image: url('../img/vaucluse-tablet-mobile.jpg');
         #cricket {
             width: 30%;
             left: 7%;
@@ -692,16 +680,12 @@ ul {
         }
     }
     #cv {
-        background-image: url('../img/huddle-mobile-xs.jpg');
         height: 2250px;
         #cv-div {
             left: 5%;
             width: 90%;
             height: 1900px;
         }
-    }
-    #blog {
-        background-image: url('../img/belize-mobile.jpg');
     }
 }
 
