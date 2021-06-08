@@ -118,10 +118,13 @@ ul {
         padding: 10px;
         border-radius: 10px;
         display: flex;
-        align-items: center;
+        text-align: center;
         // intro animation for text on homepage
         animation-name: home-text-animation;
         animation-duration: 2.5s;
+        #home-text-p {
+            margin: auto;
+        }
     }
     #home-text-background {
         height: 60px;
@@ -140,7 +143,6 @@ ul {
 
 // bio section
 #bio {
-    height: 800px;
     min-height: 100vh;
     background: url('../img/vaucluse-desktop.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -158,11 +160,22 @@ ul {
         background-color: rgba(238, 195, 198, 0.75);
     }
     // bio content
+    #bio-container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        width: 86%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #bio-text-container {
+        width: 60%;
+    }
+    #bio-img-container {
+        width: 40%;
+    }
     #bio-text {
-        position: absolute;
-        left: 7%;
-        top: 200px;
-        width: 35%;
+        width: 95%;
         @include body-font;
         font-size: 20px;
         color: black;
@@ -172,11 +185,27 @@ ul {
     }
     // photo on bio page
     #cricket {
-        width: 22%;
+        width: 60%;
         border-radius: 40px;
-        position: absolute;
-        top: 200px;
-        left: 67%;
+    }
+    #bio-map-container {
+        padding-top: 4rem;
+        width: 100%;
+        min-height: 500px;
+        #location-header {
+            text-align: center;
+            @include header-font;
+            width: 100%;
+            margin: auto;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 24px;
+            background-color: rgba(238, 195, 198, 0.75);
+        }
+        iframe {
+            width: 100%;
+            height: 70vh;
+        }
     }
 }
 
@@ -342,40 +371,6 @@ ul {
     }
 }
 
-// location section
-#location {
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    a:hover {
-        color: #4E4949;
-    }
-    height: 100vh;
-    background: url('../img/belize-desktop.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    // 'Location' header title on location section
-    #location-title {
-        @include header-font;
-        text-align: center;
-        width: 100%;
-        margin: auto;
-        padding: 1rem;
-        font-size: 36px;
-        background-color: rgba(238, 195, 198, 0.75);
-    }
-    #map-div {
-        width: 70%;
-        margin: auto;
-        iframe {
-            width: 100%;
-            height: 70vh;
-            padding-top: 4rem;
-        }
-    }
-}
-
 // fixed bottom footer with contact info
 footer {
     position: fixed;
@@ -505,15 +500,6 @@ footer {
         }
         #home-text-background {
             width: 90%;
-        }
-    }
-    #bio {
-        #bio-text {
-            width: 50%;
-        }
-        #cricket {
-            width: 30%;
-            left: 63%;
         }
     }
     #cv {

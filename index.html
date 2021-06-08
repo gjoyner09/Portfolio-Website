@@ -26,7 +26,6 @@
             <a href="#bio">Bio</a>
             <a href="#cv">CV</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#location">Location</a>
         </nav>
     </header>
 
@@ -37,22 +36,32 @@
         <img src="src/img/profpic.jpg" alt="Grey Joyner picture" id="profpic">
         <!-- separate text and background for transition -->
         <div id="home-text-background"></div>
-        <p id="home-text">
-            Software Development | Nonprofits | LGBT Mentorship | Consulting
-        </p>
+        <div id="home-text">
+            <p id="home-text-p">Full-Stack Junior Developer &nbsp | &nbsp LGBTQ Mentor &nbsp | &nbsp Basketball Junkie</p>
+        </div>
     </section>
 
 
     <!-- bio section -->
     <section id="bio">
         <header id="bio-title">Bio</header>
-        <article id="bio-text">
-            Hey! I'm Grey, a full-stack software developer. I am experienced in technologies such as JavaScript, React, Ruby, Rails, HTML, CSS, Git, and many more. <br> <br> I'm a born-and-bred North Carolinian who moved to Australia six years ago. I
-            recently received my Aussie citizenship oi oi oi! <br><br> Prior to entering software development, I worked in consulting and strategy (including for McKinsey and Woolworths) in addition to working as the COO of a nonprofit. <br><br> I am
-            passionate about LGBTQ mentorship, and have started my own mentorship program,
-            <a href="http://qmentor.org" target="_blank" rel="noopener">qmentor</a>. I am also a big fan of the NBA, karaoke (especially Mr. Brightside) and eating peanut butter by the spoonful.
-        </article>
-        <img src="src/img/cricket-cropped.jpg" alt="Grey Joyner picture" id="cricket">
+        <div id="bio-container">
+            <div id="bio-img-container">
+                <img src="src/img/cricket-cropped.jpg" alt="Grey Joyner picture" id="cricket">
+            </div>
+            <div id="bio-text-container">
+                <article id="bio-text">
+                    Hey! I'm Grey, a full-stack software developer. I am experienced in technologies such as JavaScript, React, Ruby, Rails, HTML, CSS, Git, and many more. <br> <br> I'm a born-and-bred North Carolinian who moved to Australia six years ago. I
+                    recently received my Aussie citizenship oi oi oi! <br><br> Prior to entering software development, I worked in consulting and strategy (including for McKinsey and Woolworths) in addition to working as the COO of a nonprofit. <br><br> I am
+                    passionate about LGBTQ mentorship, and have started my own mentorship program,
+                    <a href="http://qmentor.org" target="_blank" rel="noopener">qmentor</a>. I am also a big fan of the NBA, karaoke (especially Mr. Brightside) and eating peanut butter by the spoonful.
+                </article>
+            </div>
+            <div id="bio-map-container">
+                <p id="location-header">My Location</p>
+                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa0nQNrSxEmsRMKsyFmh9AQU&key=AIzaSyCcCVCSfw6WC0UoA91vh-pT30TDNN6fgD4"></iframe>
+            </div>
+        </div>
     </section>
 
     <!-- CV section -->
@@ -151,21 +160,21 @@
         <!-- box with portfolio projects -->
         <div id="portfolio-main">
             <div id="portfolio-text">
-                <div class="portfolio-div"><img src="src/img/website.jpg" alt="Website image" id="website"></div>
+                <div class="portfolio-div"><img src="src/img/mentorship-app.jpg" alt="Website image" id="website"></div>
                 <div class="portfolio-div"><img src="src/img/app.jpg" alt="App image" id="app"></div>
                 <div class="portfolio-div">
-                    <p>Built a website using HTML & CSS</p>
+                    <p>Full-stack marketplace for mentorship</p>
                 </div>
                 <div class="portfolio-div">
-                    <p>Built an app using Ruby & Rails</p>
+                    <p>Placeholder for React hackaton project</p>
                 </div>
                 <div class="portfolio-div"><img src="src/img/boardgame.jpg" alt="Board game image" id="boardgame"></div>
                 <div class="portfolio-div"><img src="src/img/marketplace.jpg" alt="Marketplace image" id="marketplace"></div>
                 <div class="portfolio-div">
-                    <p>Built a board game with JavaScript & React</p>
+                    <p>Music recommender app</p>
                 </div>
                 <div class="portfolio-div">
-                    <p>Built a marketplace with node.JS & MongoDB</p>
+                    <p>Battleship console game</p>
                 </div>
             </div>
             <div id="portfolio-text-background"></div>
@@ -186,15 +195,6 @@
             <div class="tech-img"><img src="src/img/html5.svg" alt="HTML5 logo" id="html"></div>
             <div class="tech-img"><img src="src/img/css3.svg" alt="CSS3 logo" id="css"></div>
             <div class="tech-img"><img src="src/img/sass.svg" alt="SASS logo" id="sass"></div>
-        </div>
-    </section>
-
-
-    <!-- location section -->
-    <section id="location">
-        <header id="location-title">My Location</header>
-        <div id="map-div">
-            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa0nQNrSxEmsRMKsyFmh9AQU&key=AIzaSyCcCVCSfw6WC0UoA91vh-pT30TDNN6fgD4"></iframe>
         </div>
     </section>
 

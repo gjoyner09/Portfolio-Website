@@ -140,13 +140,15 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   -webkit-animation-name: home-text-animation;
           animation-name: home-text-animation;
   -webkit-animation-duration: 2.5s;
           animation-duration: 2.5s;
+}
+
+#home #home-text #home-text-p {
+  margin: auto;
 }
 
 #home #home-text-background {
@@ -165,7 +167,6 @@ ul {
 }
 
 #bio {
-  height: 800px;
   min-height: 100vh;
   background: url("../img/vaucluse-desktop.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -185,11 +186,28 @@ ul {
   background-color: rgba(238, 195, 198, 0.75);
 }
 
+#bio #bio-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 86%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#bio #bio-text-container {
+  width: 60%;
+}
+
+#bio #bio-img-container {
+  width: 40%;
+}
+
 #bio #bio-text {
-  position: absolute;
-  left: 7%;
-  top: 200px;
-  width: 35%;
+  width: 95%;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color: black;
@@ -199,11 +217,31 @@ ul {
 }
 
 #bio #cricket {
-  width: 22%;
+  width: 60%;
   border-radius: 40px;
-  position: absolute;
-  top: 200px;
-  left: 67%;
+}
+
+#bio #bio-map-container {
+  padding-top: 4rem;
+  width: 100%;
+  min-height: 500px;
+}
+
+#bio #bio-map-container #location-header {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  width: 100%;
+  margin: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 24px;
+  background-color: rgba(238, 195, 198, 0.75);
+}
+
+#bio #bio-map-container iframe {
+  width: 100%;
+  height: 70vh;
 }
 
 #cv {
@@ -390,44 +428,6 @@ ul {
   margin: 0;
 }
 
-#location {
-  height: 100vh;
-  background: url("../img/belize-desktop.jpg") no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
-}
-
-#location a {
-  text-decoration: none;
-  color: black;
-}
-
-#location a:hover {
-  color: #4E4949;
-}
-
-#location #location-title {
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  padding: 1rem;
-  font-size: 36px;
-  background-color: rgba(238, 195, 198, 0.75);
-}
-
-#location #map-div {
-  width: 70%;
-  margin: auto;
-}
-
-#location #map-div iframe {
-  width: 100%;
-  height: 70vh;
-  padding-top: 4rem;
-}
-
 footer {
   position: fixed;
   bottom: 0;
@@ -541,13 +541,6 @@ footer div {
   }
   #home #home-text-background {
     width: 90%;
-  }
-  #bio #bio-text {
-    width: 50%;
-  }
-  #bio #cricket {
-    width: 30%;
-    left: 63%;
   }
   #cv {
     height: 1800px;
