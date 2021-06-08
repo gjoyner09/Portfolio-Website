@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width+devide-width, initial-scale=1.0" />
     <meta name="description" content="Grey Joyner's Software Development Portfolio and Bio Website">
+    <script defer src="./src/js/modal.js" type="module"></script>
 </head>
 
 <body>
@@ -24,9 +25,8 @@
         <nav class="navbar-div navbar-links">
             <a href="#home">Home</a>
             <a href="#bio">Bio</a>
-            <a href="#cv">CV</a>
             <a href="#portfolio">Portfolio</a>
-            <a href="#location">Location</a>
+            <a href="#cv">CV</a>
         </nav>
     </header>
 
@@ -37,22 +37,193 @@
         <img src="src/img/profpic.jpg" alt="Grey Joyner picture" id="profpic">
         <!-- separate text and background for transition -->
         <div id="home-text-background"></div>
-        <p id="home-text">
-            Software Development | Nonprofits | LGBT Mentorship | Consulting
-        </p>
+        <div id="home-text">
+            <p id="home-text-p">Full-Stack Junior Developer &nbsp | &nbsp LGBTQ Mentor &nbsp | &nbsp Basketball Junkie</p>
+        </div>
     </section>
 
 
     <!-- bio section -->
     <section id="bio">
         <header id="bio-title">Bio</header>
-        <article id="bio-text">
-            Hey! I'm Grey, a full-stack software developer. I am experienced in technologies such as JavaScript, React, Ruby, Rails, HTML, CSS, Git, and many more. <br> <br> I'm a born-and-bred North Carolinian who moved to Australia six years ago. I
-            recently received my Aussie citizenship oi oi oi! <br><br> Prior to entering software development, I worked in consulting and strategy (including for McKinsey and Woolworths) in addition to working as the COO of a nonprofit. <br><br> I am
-            passionate about LGBTQ mentorship, and have started my own mentorship program,
-            <a href="http://qmentor.org" target="_blank" rel="noopener">qmentor</a>. I am also a big fan of the NBA, karaoke (especially Mr. Brightside) and eating peanut butter by the spoonful.
-        </article>
-        <img src="src/img/cricket-cropped.jpg" alt="Grey Joyner picture" id="cricket">
+        <div id="bio-container">
+            <div id="bio-img-container">
+                <img src="src/img/cricket-cropped.jpg" alt="Grey Joyner picture" id="cricket">
+            </div>
+            <div id="bio-text-container">
+                <article id="bio-text">
+                    Hey! I'm Grey, a full-stack software developer. I am experienced in technologies such as JavaScript, React, Ruby, Rails, HTML, CSS, Git, and many more. <br> <br> I'm a born-and-bred North Carolinian who moved to Australia six years ago. I
+                    recently received my Aussie citizenship oi oi oi! <br><br> Prior to entering software development, I worked in consulting and strategy (including for McKinsey and Woolworths) in addition to working as the COO of a nonprofit. <br><br> I am
+                    passionate about LGBTQ mentorship, and have started my own mentorship program,
+                    <a href="http://qmentor.org" target="_blank" rel="noopener">qmentor</a>. I am also a big fan of the NBA, karaoke (especially Mr. Brightside) and eating peanut butter by the spoonful.
+                </article>
+            </div>
+            <div id="bio-map-container">
+                <p id="location-header">My Location</p>
+                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa0nQNrSxEmsRMKsyFmh9AQU&key=AIzaSyCcCVCSfw6WC0UoA91vh-pT30TDNN6fgD4"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <!-- portfolio section -->
+    <section id="portfolio">
+        <header id="portfolio-title">Portfolio</header>
+
+        <!-- box with portfolio projects -->
+        <div id="portfolio-main">
+            <div id="portfolio-text">
+                <div id="portfolio-header">Portfolio - Click for more details</div>
+                <div class="portfolio-div"><img src="src/img/mentorship-app.jpg" alt="Mentorship app" id="myImg1"></div>
+                <div class="portfolio-div"><img src="src/img/mentorship-app.jpg" alt="React app" id="myImg2"></div>
+                <div class="portfolio-div portfolio-project-text">
+                    <p id="myBtn1">Full-stack marketplace for mentorship</p>
+                </div>
+                <div class="portfolio-div portfolio-project-text">
+                    <p id="myBtn2">Placeholder for React hackaton project</p>
+                </div>
+                <div class="portfolio-div"><img src="src/img/music-app.jpg" alt="Music app" id="myImg3"></div>
+                <div class="portfolio-div"><img src="src/img/battleship.jpg" alt="Battleship game" id="myImg4"></div>
+                <div class="portfolio-div portfolio-project-text">
+                    <p id="myBtn3">Music recommender app</p>
+                </div>
+                <div class="portfolio-div portfolio-project-text">
+                    <p id="myBtn4">Battleship console game</p>
+                </div>
+            </div>
+            <div id="portfolio-text-background"></div>
+        </div>
+        
+        <div id="myModal1" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="modal-container-img">
+                        <img src="src/img/mentorship-app.jpg" alt="Mentorship app" id="mentorship">
+                    </div>
+                    <div class="modal-container-text">
+                        <p class="modal-header modal-text">Mentorship Marketplace</p>
+                        <div class="modal-text">
+                            <ul>
+                                <li class="modal-li"><b>Overview:</b> I built a full-stack two-sided marketplace for my LGBTQ mentorship program, qmentor</li>
+                                <li class="modal-li"><b>Functionality:</b> Users can sign in/out, create profiles, view mentors/mentees, message other users, match with other users and donate to the program.</li>
+                                <li class="modal-li"><b>Tech stack:</b> I built it in Ruby on Rails with a PostrgreSQL back-end. It also utilises AWS for image storing, Devise for authentication, heroku for deployment, Bootstrap for styling and, of course, HTML and CSS.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-text modal-links">
+                            <a href="http://qmentor.herokuapp.com/" target="_blank">Live app</a>
+                            <a href="https://github.com/gjoyner09/mentorship" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="myModal2" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="modal-container-img">
+                        <img src="src/img/mentorship-app.jpg" alt="Mentorship app" id="mentorship">
+                    </div>
+                    <div class="modal-container-text">
+                        <p class="modal-header modal-text">Mentorship Marketplace</p>
+                        <div class="modal-text">
+                            <ul>
+                                <li class="modal-li"><b>Overview:</b> I built a full-stack two-sided marketplace for my LGBTQ mentorship program, qmentor</li>
+                                <li class="modal-li"><b>Features:</b> Users can sign in/out, create profiles, view mentors/mentees, message other users, match with other users and donate to the program.</li>
+                                <li class="modal-li"><b>Tech stack:</b> I built it in Ruby on Rails with a PostrgreSQL back-end. It also utilises AWS for image storing, Devise for authentication, heroku for deployment, Bootstrap for styling and, of course, HTML and CSS.</li>
+                            </ul>
+                        </div>
+                        <div class="modal-text modal-links">
+                            <a href="http://qmentor.herokuapp.com/" target="_blank">Live app</a>
+                            <a href="https://github.com/gjoyner09/mentorship" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="myModal3" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="modal-container-img">
+                        <img src="src/img/music-app.jpg" alt="Music app" id="music">
+                    </div>
+                    <div class="modal-container-text">
+                        <p class="modal-header modal-text">Music App</p>
+                        <div class="modal-text">
+                            <ul>
+                                <li class="modal-li"><b>Overview:</b> Working in a team with two other coders, I built an app to recommend music based on the user's input</li>
+                                <li class="modal-li"><b>Features:</b> Users can input musical artists or bands, and the app will respond with details about that artist/band as well as five recommended artists, info about those artists and links to further information</li>
+                                <li class="modal-li"><b>Tech stack:</b> The app uses Javascript, HTML and CSS, and utilises the last.fm API to generate musical recommendations, with deployment through Netlify</li>
+                            </ul>
+                        </div>
+                        <div class="modal-text modal-links">
+                            <a href="https://musicmatcher.netlify.app/" target="_blank">Live app</a>
+                            <a href="https://github.com/gjoyner09/music-app" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="myModal4" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-container">
+                    <div class="modal-container-img">
+                        <img src="src/img/battleship.jpg" alt="Battleship game" id="battleship">
+                    </div>
+                    <div class="modal-container-text">
+                        <p class="modal-header modal-text">Battleship Game</p>
+                        <div class="modal-text">
+                            <ul>
+                                <li class="modal-li"><b>Overview:</b> I built a terminal game app in the style of Battleship</li>
+                                <li class="modal-li"><b>Features:</b> Users can choose various options at the start, including different speeds and difficulties. Users can place their ships, then compete against an AI. The AI logic includes detailed strategy</li>
+                                <li class="modal-li"><b>Tech stack:</b> I built the game with Ruby and used Rspec for unit testing, and also utilised various Ruby gems, including Artii, Colorize, TTY-Prompt and TTY-Reader</li>
+                            </ul>
+                        </div>
+                        <div class="modal-text modal-links">
+                            <a href="https://github.com/gjoyner09/Ruby_Battleship" target="_blank">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- box with technology stack -->
+        <div id="tech-div">
+            <div id="tech-title">Technologies</div>
+            <div class="tech-img"><img src="src/img/javascript.svg" alt="Javascript logo" id="javascript"></div>
+            <div class="tech-img"><img src="src/img/react.svg" alt="React logo" id="react"></div>
+            <div class="tech-img"><img src="src/img/ruby.svg" alt="Ruby logo" id="ruby"></div>
+            <div class="tech-img"><img src="src/img/rubyonrails.svg" alt="Rails logo" id="rails"></div>
+            <p class="tech-label">JavaScript</p>
+            <p class="tech-label">React</p>
+            <p class="tech-label">Ruby</p>
+            <p class="tech-label">Ruby on Rails</p>
+            <div class="tech-img"><img src="src/img/html5.svg" alt="HTML5 logo" id="html"></div>
+            <div class="tech-img"><img src="src/img/css3.svg" alt="CSS3 logo" id="css"></div>
+            <div class="tech-img"><img src="src/img/sass.svg" alt="SASS logo" id="sass"></div>
+            <div class="tech-img"><img src="src/img/node-dot-js.svg" alt="Node.js logo" id="node"></div>
+            <p class="tech-label">HTML5</p>
+            <p class="tech-label">CSS3</p>
+            <p class="tech-label">SASS</p>
+            <p class="tech-label">Node.js</p>
+            <div class="tech-img"><img src="src/img/mongodb.svg" alt="MongoDB logo" id="mongodb"></div>
+            <div class="tech-img"><img src="src/img/postgresql.svg" alt="PostgreSQL logo" id="postgresql"></div>
+            <div class="tech-img"><img src="src/img/aws.svg" alt="AWS logo" id="aws"></div>
+            <div class="tech-img"><img src="src/img/git.svg" alt="Git logo" id="git"></div>
+            <p class="tech-label">MongoDB</p>
+            <p class="tech-label">PostgreSQL</p>
+            <p class="tech-label">AWS</p>
+            <p class="tech-label">Git/Github</p>
+        </div>
     </section>
 
     <!-- CV section -->
@@ -142,62 +313,6 @@
             <div id="cv-link"><a href="src/cv.pdf" target="_blank">Download CV</a></div>
         </div>
     </section>
-
-
-    <!-- portfolio section -->
-    <section id="portfolio">
-        <header id="portfolio-title">Portfolio</header>
-
-        <!-- box with portfolio projects -->
-        <div id="portfolio-main">
-            <div id="portfolio-text">
-                <div class="portfolio-div"><img src="src/img/website.jpg" alt="Website image" id="website"></div>
-                <div class="portfolio-div"><img src="src/img/app.jpg" alt="App image" id="app"></div>
-                <div class="portfolio-div">
-                    <p>Built a website using HTML & CSS</p>
-                </div>
-                <div class="portfolio-div">
-                    <p>Built an app using Ruby & Rails</p>
-                </div>
-                <div class="portfolio-div"><img src="src/img/boardgame.jpg" alt="Board game image" id="boardgame"></div>
-                <div class="portfolio-div"><img src="src/img/marketplace.jpg" alt="Marketplace image" id="marketplace"></div>
-                <div class="portfolio-div">
-                    <p>Built a board game with JavaScript & React</p>
-                </div>
-                <div class="portfolio-div">
-                    <p>Built a marketplace with node.JS & MongoDB</p>
-                </div>
-            </div>
-            <div id="portfolio-text-background"></div>
-        </div>
-
-        <!-- box with technology stack -->
-        <div id="tech-div">
-            <div id="tech-title">Technologies</div>
-            <div class="tech-img"><img src="src/img/javascript.svg" alt="Javascript logo" id="javascript"></div>
-            <div class="tech-img"><img src="src/img/react.svg" alt="React logo" id="react"></div>
-            <div class="tech-img"><img src="src/img/java.svg" alt="Java logo" id="java"></div>
-            <div class="tech-img"><img src="src/img/ruby.svg" alt="Ruby logo" id="ruby"></div>
-            <div class="tech-img"><img src="src/img/rubyonrails.svg" alt="Rails logo" id="rails"></div>
-            <div class="tech-img"><img src="src/img/redux.svg" alt="Redux logo" id="redux"></div>
-            <div class="tech-img"><img src="src/img/node-dot-js.svg" alt="Node.js logo" id="node"></div>
-            <div class="tech-img"><img src="src/img/mongodb.svg" alt="MongoDB logo" id="mongodb"></div>
-            <div class="tech-img"><img src="src/img/git.svg" alt="Git logo" id="git"></div>
-            <div class="tech-img"><img src="src/img/html5.svg" alt="HTML5 logo" id="html"></div>
-            <div class="tech-img"><img src="src/img/css3.svg" alt="CSS3 logo" id="css"></div>
-            <div class="tech-img"><img src="src/img/sass.svg" alt="SASS logo" id="sass"></div>
-        </div>
-    </section>
-
-
-    <!-- location section -->
-    <section id="location">
-        <header id="location-title">My Location</header>
-        <div id="map-div">
-            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa0nQNrSxEmsRMKsyFmh9AQU&key=AIzaSyCcCVCSfw6WC0UoA91vh-pT30TDNN6fgD4"></iframe>
-        </div>
-    </section>
-
 
     <!-- fixed footer with contact links -->
     <footer>

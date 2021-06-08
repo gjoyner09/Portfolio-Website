@@ -118,10 +118,13 @@ ul {
         padding: 10px;
         border-radius: 10px;
         display: flex;
-        align-items: center;
+        text-align: center;
         // intro animation for text on homepage
         animation-name: home-text-animation;
         animation-duration: 2.5s;
+        #home-text-p {
+            margin: auto;
+        }
     }
     #home-text-background {
         height: 60px;
@@ -140,7 +143,6 @@ ul {
 
 // bio section
 #bio {
-    height: 800px;
     min-height: 100vh;
     background: url('../img/vaucluse-desktop.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -158,11 +160,22 @@ ul {
         background-color: rgba(238, 195, 198, 0.75);
     }
     // bio content
+    #bio-container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        width: 86%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #bio-text-container {
+        width: 60%;
+    }
+    #bio-img-container {
+        width: 40%;
+    }
     #bio-text {
-        position: absolute;
-        left: 7%;
-        top: 200px;
-        width: 35%;
+        width: 95%;
         @include body-font;
         font-size: 20px;
         color: black;
@@ -172,11 +185,27 @@ ul {
     }
     // photo on bio page
     #cricket {
-        width: 22%;
+        width: 60%;
         border-radius: 40px;
-        position: absolute;
-        top: 200px;
-        left: 67%;
+    }
+    #bio-map-container {
+        padding-top: 4rem;
+        width: 100%;
+        min-height: 500px;
+        #location-header {
+            text-align: center;
+            @include header-font;
+            width: 100%;
+            margin: auto;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 24px;
+            background-color: rgba(238, 195, 198, 0.75);
+        }
+        iframe {
+            width: 100%;
+            height: 70vh;
+        }
     }
 }
 
@@ -282,7 +311,7 @@ ul {
         #portfolio-text {
             width: 100%;
             @include body-font;
-            font-size: 20px;
+            font-size: 18px;
             position: absolute;
             padding: 10px;
             border-radius: 10px;
@@ -290,6 +319,19 @@ ul {
             flex-wrap: wrap;
             background-color: rgba(238, 195, 198, 0.75);
             border-radius: 10px;
+            #portfolio-header {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-align: center;
+                width: 100%;
+                font-size: 24px;
+            }
+            .portfolio-project-text {
+                border-bottom: solid rgba(238, 195, 198, 0);
+            }
+            .portfolio-project-text:hover {
+                border-bottom: solid black;
+            }
             .portfolio-div {
                 display: flex;
                 width: 50%;
@@ -300,30 +342,109 @@ ul {
                     height: 100%;
                     margin-left: auto;
                     margin-right: auto;
+                    object-fit: cover;
+                    cursor: pointer;
                 }
                 // portfolio descriptions
                 p {
                     width: 95%;
                     margin-left: auto;
                     margin-right: auto;
+                    cursor: pointer;
                 }
             }
         }
     }
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 100; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+        @include body-font;
+    }
+    .modal-content {
+        background-color: #d8d8d8;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        .modal-container {
+            display: flex;
+            flex-wrap: wrap;
+            .modal-container-img {
+                width: 50%;
+                img {
+                    width: 100%;
+                }
+            }
+            .modal-container-text {
+                width: 50%;
+                .modal-header {
+                    @include header-font;
+                    font-size: 24px;
+                    margin-bottom: 0;
+                }
+                .modal-text {
+                    padding: 1rem;
+                    .modal-li {
+                        margin-bottom: 10px;
+                    }
+                    .modal-links{
+                        padding: 2rem;
+                    }
+                    a {
+                        padding: 1rem;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        color:black;
+                        background-color: #b6b6b6;
+                        border-radius: 3px;
+                    }
+                    a:hover {
+                        border-bottom: solid #080808;
+                    }
+                }
+            }
+        }
+    }
+    
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
     // tech stack content
     #tech-div {
         @include body-font;
         font-size: 24px;
         position: absolute;
-        width: 24%;
-        left: 65%;
+        width: 35%;
+        left: 55%;
         top: 200px;
         background-color: rgba(238, 195, 198, 0.75);
-        padding: 0;
+        padding: 10px;
         margin: 0;
         border-radius: 10px;
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 0.5rem;
         #tech-title {
             padding-top: 10px;
             padding-bottom: 10px;
@@ -332,46 +453,20 @@ ul {
         }
         .tech-img {
             width: 25%;
-            padding: 4%;
-            margin: 0;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
             img {
-                padding: 0;
-                margin: 0;
+                width: 80%;
             }
         }
-    }
-}
-
-// location section
-#location {
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    a:hover {
-        color: #4E4949;
-    }
-    height: 100vh;
-    background: url('../img/belize-desktop.jpg') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    // 'Location' header title on location section
-    #location-title {
-        @include header-font;
-        text-align: center;
-        width: 100%;
-        margin: auto;
-        padding: 1rem;
-        font-size: 36px;
-        background-color: rgba(238, 195, 198, 0.75);
-    }
-    #map-div {
-        width: 70%;
-        margin: auto;
-        iframe {
-            width: 100%;
-            height: 70vh;
-            padding-top: 4rem;
+        .tech-label {
+            width: 25%;
+            margin: 0;
+            font-size: 16px;
+            margin: auto;
+            text-align: center;
         }
     }
 }
@@ -505,15 +600,6 @@ footer {
         }
         #home-text-background {
             width: 90%;
-        }
-    }
-    #bio {
-        #bio-text {
-            width: 50%;
-        }
-        #cricket {
-            width: 30%;
-            left: 63%;
         }
     }
     #cv {
