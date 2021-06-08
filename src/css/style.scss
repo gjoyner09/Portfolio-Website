@@ -326,6 +326,12 @@ ul {
                 width: 100%;
                 font-size: 24px;
             }
+            .portfolio-project-text {
+                border-bottom: solid rgba(238, 195, 198, 0);
+            }
+            .portfolio-project-text:hover {
+                border-bottom: solid black;
+            }
             .portfolio-div {
                 display: flex;
                 width: 50%;

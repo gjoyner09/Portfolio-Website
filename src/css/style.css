@@ -380,6 +380,14 @@ ul {
   font-size: 24px;
 }
 
+#portfolio #portfolio-main #portfolio-text .portfolio-project-text {
+  border-bottom: solid rgba(238, 195, 198, 0);
+}
+
+#portfolio #portfolio-main #portfolio-text .portfolio-project-text:hover {
+  border-bottom: solid black;
+}
+
 #portfolio #portfolio-main #portfolio-text .portfolio-div {
   display: -webkit-box;
   display: -ms-flexbox;
