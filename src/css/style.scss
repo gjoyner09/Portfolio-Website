@@ -55,6 +55,7 @@ ul {
     position: fixed;
     align-items: center;
     width: 100%;
+    max-width: 100vw;
     background-color: #B9B9B9;
     margin: 0;
     padding: 0;
@@ -152,11 +153,11 @@ ul {
         @include header-font;
         text-align: center;
         width: 100%;
+        max-width: 100vw;
         margin: auto;
-        padding: 0;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         font-size: 36px;
-        top: 120px;
         background-color: rgba(238, 195, 198, 0.75);
     }
     // bio content
@@ -175,11 +176,11 @@ ul {
         width: 40%;
     }
     #bio-text {
-        width: 95%;
+        width: 100%;
         @include body-font;
         font-size: 20px;
         color: black;
-        padding: 10px;
+        padding: 1rem;
         border-radius: 10px;
         background-color: rgba(238, 195, 198, 0.75);
     }
@@ -209,85 +210,8 @@ ul {
     }
 }
 
-// cv section
-#cv {
-    height: 1700px;
-    min-height: 100vh;
-    background: url('../img/huddle-desktop.jpg') no-repeat center center fixed;
-    background-size: cover;
-    @include body-font;
-    font-size: 18px;
-    position: relative;
-    // 'CV' header title on cv section
-    #cv-title {
-        text-align: center;
-        width: 100%;
-        margin: auto;
-        padding: 1rem;
-        font-size: 36px;
-        @include header-font;
-        background-color: rgba(238, 195, 198, 0.75);
-    }
-    // cv content
-    #cv-div {
-        width: 80%;
-        position: absolute;
-        top: 200px;
-        left: 10%;
-        display: flex;
-        flex-wrap: wrap;
-        // company logos in cv page
-        .cv-img {
-            width: 20%;
-            margin-bottom: 30px;
-            img {
-                width: 60%;
-                border-radius: 10px;
-            }
-        }
-        .cv-text {
-            width: 80%;
-            // allow items to stack on top of each other
-            display: grid;
-            margin-bottom: 30px;
-            // allow items to stack on top of each other
-            .cv-text-1,
-            .cv-text-2 {
-                grid-column: 1;
-                grid-row: 1;
-            }
-            // background color for cv content
-            .cv-text-1 {
-                background-color: rgba(238, 195, 198, 0.75);
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-            }
-            // cv text
-            .cv-text-2 {
-                z-index: 1;
-                padding: 10px;
-                padding-top: 20px;
-            }
-        }
-    }
-    #cv-link {
-        @include body-font;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: #4E4949;
-        text-decoration: none;
-        padding: 3px;
-        border-radius: 3px;
-        a {
-            color: white;
-        }
-    }
-}
-
 // portfolio section
 #portfolio {
-    height: 800px;
     min-height: 100vh;
     background: url('../img/peoplemover-desktop-v2.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -297,28 +221,33 @@ ul {
         @include header-font;
         text-align: center;
         width: 100%;
+        max-width: 100vw;
         margin: auto;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         font-size: 36px;
         background-color: rgba(238, 195, 198, 0.75);
     }
+    #portfolio-container {
+        width: 80%;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
     // portfolio content
     #portfolio-main {
-        position: absolute;
-        width: 35%;
-        top: 200px;
-        left: 7%;
+        width: 58%;
         #portfolio-text {
-            width: 100%;
+            width: 80%;
             @include body-font;
             font-size: 18px;
-            position: absolute;
-            padding: 10px;
+            padding: 1rem;
             border-radius: 10px;
             display: flex;
             flex-wrap: wrap;
             background-color: rgba(238, 195, 198, 0.75);
-            border-radius: 10px;
             #portfolio-header {
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -326,20 +255,16 @@ ul {
                 width: 100%;
                 font-size: 24px;
             }
-            .portfolio-project-text {
-                border-bottom: solid rgba(238, 195, 198, 0);
-            }
-            .portfolio-project-text:hover {
-                border-bottom: solid black;
-            }
-            .portfolio-div {
+            .portfolio-project-container {
                 display: flex;
+                flex-wrap: wrap;
                 width: 50%;
-                margin-bottom: 10px;
-                // portfolio images
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+                border-bottom: solid rgba(238, 195, 198, 0);
                 img {
+                    height: 10rem;
                     width: 95%;
-                    height: 100%;
                     margin-left: auto;
                     margin-right: auto;
                     object-fit: cover;
@@ -350,11 +275,55 @@ ul {
                     width: 95%;
                     margin-left: auto;
                     margin-right: auto;
+                    margin-top: 0.5rem;
                     cursor: pointer;
                 }
             }
+            .portfolio-project-container:hover {
+                border-bottom: solid black;
+            }
         }
     }
+    
+    // tech stack content
+    #tech-div-container {
+        width: 42%;
+    }
+    #tech-div {
+        @include body-font;
+        font-size: 24px;
+        width: 80%;
+        background-color: rgba(238, 195, 198, 0.75);
+        margin: 0;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 0.5rem;
+        #tech-title {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            width: 100%
+        }
+        .tech-img {
+            width: 25%;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 80%;
+            }
+        }
+        .tech-label {
+            width: 25%;
+            margin: 0;
+            font-size: 16px;
+            margin: auto;
+            text-align: center;
+        }
+    }
+    
     .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -429,44 +398,81 @@ ul {
         text-decoration: none;
         cursor: pointer;
     }
-    
-    // tech stack content
-    #tech-div {
-        @include body-font;
-        font-size: 24px;
-        position: absolute;
-        width: 35%;
-        left: 55%;
-        top: 200px;
+}
+
+// cv section
+#cv {
+    min-height: 100vh;
+    background: url('../img/huddle-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+    @include body-font;
+    font-size: 18px;
+    position: relative;
+    // 'CV' header title on cv section
+    #cv-title {
+        text-align: center;
+        width: 100%;
+        max-width: 100vw;
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 36px;
+        @include header-font;
         background-color: rgba(238, 195, 198, 0.75);
-        padding: 10px;
-        margin: 0;
-        border-radius: 10px;
+    }
+    // cv content
+    #cv-div {
+        width: 80%;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 0.5rem;
-        #tech-title {
-            padding-top: 10px;
-            padding-bottom: 10px;
-            text-align: center;
-            width: 100%
-        }
-        .tech-img {
-            width: 25%;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-            display: flex;
-            justify-content: center;
+        // company logos in cv page
+        .cv-img {
+            width: 20%;
+            margin-bottom: 30px;
             img {
-                width: 80%;
+                width: 60%;
+                border-radius: 10px;
             }
         }
-        .tech-label {
-            width: 25%;
-            margin: 0;
-            font-size: 16px;
-            margin: auto;
-            text-align: center;
+        .cv-text {
+            width: 80%;
+            // allow items to stack on top of each other
+            display: grid;
+            margin-bottom: 30px;
+            // allow items to stack on top of each other
+            .cv-text-1,
+            .cv-text-2 {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            // background color for cv content
+            .cv-text-1 {
+                background-color: rgba(238, 195, 198, 0.75);
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+            }
+            // cv text
+            .cv-text-2 {
+                z-index: 1;
+                padding: 10px;
+                padding-top: 20px;
+            }
+        }
+    }
+    #cv-link {
+        @include body-font;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #4E4949;
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 3px;
+        a {
+            color: white;
         }
     }
 }
@@ -477,6 +483,7 @@ footer {
     // fix to bottom
     bottom: 0;
     width: 100%;
+    max-width: 100vw;
     background-color: #B9B9B9;
     color: black;
     text-align: right;
@@ -498,18 +505,17 @@ footer {
     }
 }
 
-// media queries (lots of different ones to attempt to make each view size look as good as possible)
-
-@media only screen and (max-width: 1800px) {
-    #cv {
-        height: 1450px;
-    }
-}
+// media queries
 
 @media only screen and (max-width: 1300px) {
     #home {
         #home-text {
             font-size: 22px;
+        }
+    }
+    #portfolio {
+        #tech-div {
+            width: 90%;
         }
     }
 }
@@ -524,7 +530,6 @@ footer {
         }
     }
     #cv {
-        height: 1550px;
         #cv-div {
             .cv-img {
                 img {
@@ -534,12 +539,10 @@ footer {
         }
     }
     #portfolio {
-        #portfolio-main {
-            width: 40%;
-        }
         #tech-div {
-            width: 29%;
-            left: 61%;
+            .tech-label {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -550,13 +553,29 @@ footer {
             font-size: 20px;
         }
     }
-    #bio {
-        #bio-text {
-            font-size: 18px;
+    #portfolio {
+        #portfolio-main {
+            width: 90%;
+            margin: auto;
+            #portfolio-text {
+                width: 90%;
+                margin: auto;
+                padding: 1rem;
+            }
         }
-    }
-    #cv {
-        height: 1650px;
+        #tech-div-container {
+            width: 90%;
+            margin: auto;
+            padding-top: 4rem;
+            #tech-div {
+                width: 90%;
+                margin: auto;
+                padding: 1rem;
+                .tech-label {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
 
@@ -582,7 +601,6 @@ footer {
         }
     }
     #cv {
-        height: 1700px;
         #cv-div {
             .cv-img {
                 img {
@@ -601,9 +619,6 @@ footer {
         #home-text-background {
             width: 90%;
         }
-    }
-    #cv {
-        height: 1800px;
     }
     #location {
         #location-div {
@@ -627,18 +642,18 @@ footer {
             font-size: 18px;
         }
     }
-    #cv {
-        height: 1900px;
-    }
     #portfolio {
-        #portfolio-main {
-            width: 47%;
-            #portfolio-text {
-                font-size: 18px;
+        #portfolio-container {
+            #portfolio-main {
+                #portfolio-text {
+                    .portfolio-project-container {
+                        width: 90%;
+                        margin: auto;
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
             }
-        }
-        #tech-div {
-            width: 32%;
         }
     }
 }
@@ -651,6 +666,7 @@ footer {
         }
     }
     #home {
+        background: url('../img/wedding-cropped.jpg') no-repeat center center fixed;
         #home-text {
             width: 70%;
             font-size: 20px;
@@ -660,38 +676,42 @@ footer {
         }
     }
     #bio {
-        #bio-text {
-            font-size: 16px;
+        #bio-img-container {
+            width: 60%;
+            margin: auto;
+            margin-bottom: 2rem;
+            #cricket {
+                width: 100%;
+            }
         }
-    }
-    #cv {
-        height: 2100px;
+        #bio-text-container {
+            width: 100%;
+            margin: auto;
+            #bio-text {
+                width: 80%;
+                margin: auto;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: 580px) {
-    #portfolio {
-        height: 1000px;
-        #portfolio-main {
-            width: 83%;
-            height: 900px;
-            font-size: 16px;
-        }
-        #tech-div {
-            top: 750px;
-            left: 7%;
-            width: 86%;
-            .tech-img {
-                width: 14%;
-                padding: 1%;
-            }
-        }
-    }
     #location {
         #location-div {
             font-size: 16px;
             left: 4%;
             width: 92%;
+        }
+    }
+    #portfolio {
+        #portfolio-main {
+            #portfolio-text {
+                .portfolio-div {
+                    width: 90%;
+                    margin: auto;
+                    margin-bottom: 1rem;
+                }
+            }
         }
     }
 }
@@ -713,24 +733,6 @@ footer {
             width: 85%;
         }
     }
-    #bio {
-        #cricket {
-            width: 30%;
-            left: 7%;
-        }
-        #bio-text {
-            top: 400px;
-            width: 86%;
-        }
-    }
-    #cv {
-        height: 2250px;
-        #cv-div {
-            left: 5%;
-            width: 90%;
-            height: 1900px;
-        }
-    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -743,10 +745,17 @@ footer {
         }
     }
     #cv {
-        height: 2100px;
         #cv-div {
             font-size: 17px;
-            height: 1000px;
+        }
+    }
+    #portfolio {
+        #portfolio-container {
+            #tech-div {
+                .tech-label {
+                    font-size: 12px;
+                }
+            }
         }
     }
 }
@@ -764,19 +773,11 @@ footer {
         }
     }
     #home {
-        height: 700px;
         #profpic {
             width: 35%;
         }
     }
-    #bio {
-        height: 820px;
-        #bio-text {
-            top: 370px;
-        }
-    }
     #cv {
-        height: 1900px;
         #cv-div {
             font-size: 15px;
         }
@@ -786,22 +787,10 @@ footer {
             font-size: 14px;
         }
     }
-    #portfolio {
-        height: 950px;
-        #portfolio-main {
-            #portfolio-text {
-                font-size: 14px;
-            }
-        }
-        #tech-div {
-            top: 700px;
-        }
-    }
 }
 
 @media only screen and (max-width: 400px) {
     #cv {
-        height: 1850px;
         #cv-div {
             font-size: 14px;
         }
@@ -818,7 +807,6 @@ footer {
         }
     }
     #home {
-        height: 670px;
         #profpic {
             width: 40%;
         }
@@ -826,15 +814,21 @@ footer {
             font-size: 18px;
         }
     }
-    #bio {
-        #bio-text {
-            font-size: 15px;
-        }
-    }
     #cv {
-        height: 1750px;
         #cv-div {
             font-size: 13px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #portfolio {
+        #portfolio-container {
+            #tech-div {
+                .tech-label {
+                    font-size: 10px;
+                }
+            }
         }
     }
 }

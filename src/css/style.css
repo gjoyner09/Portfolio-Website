@@ -65,6 +65,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  max-width: 100vw;
   background-color: #B9B9B9;
   margin: 0;
   padding: 0;
@@ -178,11 +179,11 @@ ul {
   font-weight: bold;
   text-align: center;
   width: 100%;
+  max-width: 100vw;
   margin: auto;
-  padding: 0;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 36px;
-  top: 120px;
   background-color: rgba(238, 195, 198, 0.75);
 }
 
@@ -207,11 +208,11 @@ ul {
 }
 
 #bio #bio-text {
-  width: 95%;
+  width: 100%;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   color: black;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
   background-color: rgba(238, 195, 198, 0.75);
 }
@@ -244,93 +245,7 @@ ul {
   height: 70vh;
 }
 
-#cv {
-  height: 1700px;
-  min-height: 100vh;
-  background: url("../img/huddle-desktop.jpg") no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
-  position: relative;
-}
-
-#cv #cv-title {
-  text-align: center;
-  width: 100%;
-  margin: auto;
-  padding: 1rem;
-  font-size: 36px;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  background-color: rgba(238, 195, 198, 0.75);
-}
-
-#cv #cv-div {
-  width: 80%;
-  position: absolute;
-  top: 200px;
-  left: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#cv #cv-div .cv-img {
-  width: 20%;
-  margin-bottom: 30px;
-}
-
-#cv #cv-div .cv-img img {
-  width: 60%;
-  border-radius: 10px;
-}
-
-#cv #cv-div .cv-text {
-  width: 80%;
-  display: -ms-grid;
-  display: grid;
-  margin-bottom: 30px;
-}
-
-#cv #cv-div .cv-text .cv-text-1,
-#cv #cv-div .cv-text .cv-text-2 {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
-#cv #cv-div .cv-text .cv-text-1 {
-  background-color: rgba(238, 195, 198, 0.75);
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-}
-
-#cv #cv-div .cv-text .cv-text-2 {
-  z-index: 1;
-  padding: 10px;
-  padding-top: 20px;
-}
-
-#cv #cv-link {
-  font-family: 'Quicksand', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #4E4949;
-  text-decoration: none;
-  padding: 3px;
-  border-radius: 3px;
-}
-
-#cv #cv-link a {
-  color: white;
-}
-
 #portfolio {
-  height: 800px;
   min-height: 100vh;
   background: url("../img/peoplemover-desktop-v2.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -343,25 +258,35 @@ ul {
   font-weight: bold;
   text-align: center;
   width: 100%;
+  max-width: 100vw;
   margin: auto;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   font-size: 36px;
   background-color: rgba(238, 195, 198, 0.75);
 }
 
+#portfolio #portfolio-container {
+  width: 80%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #portfolio #portfolio-main {
-  position: absolute;
-  width: 35%;
-  top: 200px;
-  left: 7%;
+  width: 58%;
 }
 
 #portfolio #portfolio-main #portfolio-text {
-  width: 100%;
+  width: 80%;
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
-  position: absolute;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +294,6 @@ ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: rgba(238, 195, 198, 0.75);
-  border-radius: 10px;
 }
 
 #portfolio #portfolio-main #portfolio-text #portfolio-header {
@@ -380,25 +304,21 @@ ul {
   font-size: 24px;
 }
 
-#portfolio #portfolio-main #portfolio-text .portfolio-project-text {
-  border-bottom: solid rgba(238, 195, 198, 0);
-}
-
-#portfolio #portfolio-main #portfolio-text .portfolio-project-text:hover {
-  border-bottom: solid black;
-}
-
-#portfolio #portfolio-main #portfolio-text .portfolio-div {
+#portfolio #portfolio-main #portfolio-text .portfolio-project-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 50%;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: solid rgba(238, 195, 198, 0);
 }
 
-#portfolio #portfolio-main #portfolio-text .portfolio-div img {
+#portfolio #portfolio-main #portfolio-text .portfolio-project-container img {
+  height: 10rem;
   width: 95%;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   -o-object-fit: cover;
@@ -406,11 +326,66 @@ ul {
   cursor: pointer;
 }
 
-#portfolio #portfolio-main #portfolio-text .portfolio-div p {
+#portfolio #portfolio-main #portfolio-text .portfolio-project-container p {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.5rem;
   cursor: pointer;
+}
+
+#portfolio #portfolio-main #portfolio-text .portfolio-project-container:hover {
+  border-bottom: solid black;
+}
+
+#portfolio #tech-div-container {
+  width: 42%;
+}
+
+#portfolio #tech-div {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  width: 80%;
+  background-color: rgba(238, 195, 198, 0.75);
+  margin: 0;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 0.5rem;
+}
+
+#portfolio #tech-div #tech-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#portfolio #tech-div .tech-img {
+  width: 25%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio #tech-div .tech-img img {
+  width: 80%;
+}
+
+#portfolio #tech-div .tech-label {
+  width: 25%;
+  margin: 0;
+  font-size: 16px;
+  margin: auto;
+  text-align: center;
 }
 
 #portfolio .modal {
@@ -511,60 +486,97 @@ ul {
   cursor: pointer;
 }
 
-#portfolio #tech-div {
+#cv {
+  min-height: 100vh;
+  background: url("../img/huddle-desktop.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
-  position: absolute;
-  width: 35%;
-  left: 55%;
-  top: 200px;
+  font-size: 18px;
+  position: relative;
+}
+
+#cv #cv-title {
+  text-align: center;
+  width: 100%;
+  max-width: 100vw;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 36px;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
   background-color: rgba(238, 195, 198, 0.75);
-  padding: 10px;
-  margin: 0;
-  border-radius: 10px;
+}
+
+#cv #cv-div {
+  width: 80%;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 0.5rem;
 }
 
-#portfolio #tech-div #tech-title {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  width: 100%;
+#cv #cv-div .cv-img {
+  width: 20%;
+  margin-bottom: 30px;
 }
 
-#portfolio #tech-div .tech-img {
-  width: 25%;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#cv #cv-div .cv-img img {
+  width: 60%;
+  border-radius: 10px;
 }
 
-#portfolio #tech-div .tech-img img {
+#cv #cv-div .cv-text {
   width: 80%;
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 30px;
 }
 
-#portfolio #tech-div .tech-label {
-  width: 25%;
-  margin: 0;
-  font-size: 16px;
-  margin: auto;
-  text-align: center;
+#cv #cv-div .cv-text .cv-text-1,
+#cv #cv-div .cv-text .cv-text-2 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+#cv #cv-div .cv-text .cv-text-1 {
+  background-color: rgba(238, 195, 198, 0.75);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+#cv #cv-div .cv-text .cv-text-2 {
+  z-index: 1;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#cv #cv-link {
+  font-family: 'Quicksand', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4E4949;
+  text-decoration: none;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#cv #cv-link a {
+  color: white;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 100vw;
   background-color: #B9B9B9;
   color: black;
   text-align: right;
@@ -587,15 +599,12 @@ footer div {
   bottom: 7px;
 }
 
-@media only screen and (max-width: 1800px) {
-  #cv {
-    height: 1450px;
-  }
-}
-
 @media only screen and (max-width: 1300px) {
   #home #home-text {
     font-size: 22px;
+  }
+  #portfolio #tech-div {
+    width: 90%;
   }
 }
 
@@ -606,18 +615,11 @@ footer div {
   #home #home-text-background {
     width: 70%;
   }
-  #cv {
-    height: 1550px;
-  }
   #cv #cv-div .cv-img img {
     width: 80%;
   }
-  #portfolio #portfolio-main {
-    width: 40%;
-  }
-  #portfolio #tech-div {
-    width: 29%;
-    left: 61%;
+  #portfolio #tech-div .tech-label {
+    font-size: 14px;
   }
 }
 
@@ -625,11 +627,27 @@ footer div {
   #home #home-text {
     font-size: 20px;
   }
-  #bio #bio-text {
-    font-size: 18px;
+  #portfolio #portfolio-main {
+    width: 90%;
+    margin: auto;
   }
-  #cv {
-    height: 1650px;
+  #portfolio #portfolio-main #portfolio-text {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+  }
+  #portfolio #tech-div-container {
+    width: 90%;
+    margin: auto;
+    padding-top: 4rem;
+  }
+  #portfolio #tech-div-container #tech-div {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+  }
+  #portfolio #tech-div-container #tech-div .tech-label {
+    font-size: 16px;
   }
 }
 
@@ -660,9 +678,6 @@ footer div {
       left: 5%;
     }
   }
-  #cv {
-    height: 1700px;
-  }
   #cv #cv-div .cv-img img {
     width: 90%;
   }
@@ -674,9 +689,6 @@ footer div {
   }
   #home #home-text-background {
     width: 90%;
-  }
-  #cv {
-    height: 1800px;
   }
   #location #location-div {
     left: 7%;
@@ -694,17 +706,11 @@ footer div {
   #home #home-text {
     font-size: 18px;
   }
-  #cv {
-    height: 1900px;
-  }
-  #portfolio #portfolio-main {
-    width: 47%;
-  }
-  #portfolio #portfolio-main #portfolio-text {
-    font-size: 18px;
-  }
-  #portfolio #tech-div {
-    width: 32%;
+  #portfolio #portfolio-container #portfolio-main #portfolio-text .portfolio-project-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -713,6 +719,9 @@ footer div {
     font-size: 20px;
     padding: 5px;
   }
+  #home {
+    background: url("../img/wedding-cropped.jpg") no-repeat center center fixed;
+  }
   #home #home-text {
     width: 70%;
     font-size: 20px;
@@ -720,36 +729,34 @@ footer div {
   #home #home-text-background {
     width: 70%;
   }
-  #bio #bio-text {
-    font-size: 16px;
+  #bio #bio-img-container {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
   }
-  #cv {
-    height: 2100px;
+  #bio #bio-img-container #cricket {
+    width: 100%;
+  }
+  #bio #bio-text-container {
+    width: 100%;
+    margin: auto;
+  }
+  #bio #bio-text-container #bio-text {
+    width: 80%;
+    margin: auto;
   }
 }
 
 @media only screen and (max-width: 580px) {
-  #portfolio {
-    height: 1000px;
-  }
-  #portfolio #portfolio-main {
-    width: 83%;
-    height: 900px;
-    font-size: 16px;
-  }
-  #portfolio #tech-div {
-    top: 750px;
-    left: 7%;
-    width: 86%;
-  }
-  #portfolio #tech-div .tech-img {
-    width: 14%;
-    padding: 1%;
-  }
   #location #location-div {
     font-size: 16px;
     left: 4%;
     width: 92%;
+  }
+  #portfolio #portfolio-main #portfolio-text .portfolio-div {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
   }
 }
 
@@ -766,22 +773,6 @@ footer div {
   #home #home-text-background {
     width: 85%;
   }
-  #bio #cricket {
-    width: 30%;
-    left: 7%;
-  }
-  #bio #bio-text {
-    top: 400px;
-    width: 86%;
-  }
-  #cv {
-    height: 2250px;
-  }
-  #cv #cv-div {
-    left: 5%;
-    width: 90%;
-    height: 1900px;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -791,12 +782,11 @@ footer div {
   .navbar .navbar-title {
     font-size: 12px;
   }
-  #cv {
-    height: 2100px;
-  }
   #cv #cv-div {
     font-size: 17px;
-    height: 1000px;
+  }
+  #portfolio #portfolio-container #tech-div .tech-label {
+    font-size: 12px;
   }
 }
 
@@ -810,20 +800,8 @@ footer div {
   .navbar a {
     font-size: 17px;
   }
-  #home {
-    height: 700px;
-  }
   #home #profpic {
     width: 35%;
-  }
-  #bio {
-    height: 820px;
-  }
-  #bio #bio-text {
-    top: 370px;
-  }
-  #cv {
-    height: 1900px;
   }
   #cv #cv-div {
     font-size: 15px;
@@ -831,21 +809,9 @@ footer div {
   #location #location-div {
     font-size: 14px;
   }
-  #portfolio {
-    height: 950px;
-  }
-  #portfolio #portfolio-main #portfolio-text {
-    font-size: 14px;
-  }
-  #portfolio #tech-div {
-    top: 700px;
-  }
 }
 
 @media only screen and (max-width: 400px) {
-  #cv {
-    height: 1850px;
-  }
   #cv #cv-div {
     font-size: 14px;
   }
@@ -858,23 +824,20 @@ footer div {
   .navbar a {
     font-size: 16px;
   }
-  #home {
-    height: 670px;
-  }
   #home #profpic {
     width: 40%;
   }
   #home #home-text {
     font-size: 18px;
   }
-  #bio #bio-text {
-    font-size: 15px;
-  }
-  #cv {
-    height: 1750px;
-  }
   #cv #cv-div {
     font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #portfolio #portfolio-container #tech-div .tech-label {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
