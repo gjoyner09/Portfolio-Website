@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <!-- GJ favicon -->
     <link rel="shortcut icon" type="image/jpg" href="src/img/favicon.JPG" />
+    <!-- Animate on scroll library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width+devide-width, initial-scale=1.0" />
     <meta name="description" content="Grey Joyner's Software Development Portfolio and Bio Website">
@@ -23,10 +25,10 @@
         </div>
         <!-- links to sections -->
         <nav class="navbar-div navbar-links">
-            <a href="#home">Home</a>
-            <a href="#bio">Bio</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#cv">CV</a>
+            <a href="#home" id="a1">Home</a>
+            <a href="#bio" id="a2">Bio</a>
+            <a href="#portfolio" id="a3">Portfolio</a>
+            <a href="#cv" id="a4">CV</a>
         </nav>
     </header>
 
@@ -47,10 +49,10 @@
     <section id="bio">
         <header id="bio-title">Bio</header>
         <div id="bio-container">
-            <div id="bio-img-container">
+            <div id="bio-img-container" data-aos="fade-right" data-aos-duration="800">
                 <img src="src/img/blm.jpg" alt="Grey Joyner picture" id="cricket">
             </div>
-            <div id="bio-text-container">
+            <div id="bio-text-container" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200">
                 <article id="bio-text">
                     Hey! I'm Grey, a full-stack software developer. I am experienced in technologies such as JavaScript, React, Ruby, Rails, HTML, CSS and more. <br> <br> I'm a born-and-bred North Carolinian who moved to Australia six years ago. I
                     recently received my Aussie citizenship oi oi oi! <br><br> Prior to entering software development, I worked in consulting and strategy (including for McKinsey and Woolworths) in addition to working as the COO of a nonprofit. <br><br> I am
@@ -58,7 +60,7 @@
                     <a href="http://qmentor.org" target="_blank" rel="noopener">qmentor</a>. I am also a big fan of the NBA, karaoke (especially Mr. Brightside) and eating peanut butter by the spoonful.
                 </article>
             </div>
-            <div id="bio-map-container">
+            <div id="bio-map-container" data-aos="flip-left" data-aos-duration="800">
                 <p id="location-header">My Location</p>
                 <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJa0nQNrSxEmsRMKsyFmh9AQU&key=AIzaSyCcCVCSfw6WC0UoA91vh-pT30TDNN6fgD4"></iframe>
             </div>
@@ -72,7 +74,7 @@
         <div id="portfolio-container">
             
             <!-- box with portfolio projects -->
-            <div id="portfolio-main">
+            <div id="portfolio-main" data-aos="fade" data-aos-duration="800">
                 <div id="portfolio-text">
                     <div id="portfolio-header">Portfolio - Click for more details</div>
                     <div class="portfolio-project-container" id="myBtn1">
@@ -96,7 +98,7 @@
             </div>
 
             <!-- box with technology stack -->
-            <div id="tech-div-container">
+            <div id="tech-div-container" data-aos="fade" data-aos-duration="1200" data-aos-delay="400">
                 <div id="tech-div">
                     <div id="tech-title">Technologies</div>
                     <div class="tech-img"><img src="src/img/javascript.svg" alt="Javascript logo" id="javascript"></div>
@@ -235,7 +237,7 @@
     <section id="cv">
         <header id="cv-title">CV</header>
         <!-- div with all CV content -->
-        <div id="cv-div">
+        <div id="cv-div" data-aos="zoom-in" data-aos-duration="800">
             <div class="cv-img"><img src="src/img/coder-academy.jpg" alt="Coder Academy logo" id="coder-academy"></div>
             <div class="cv-text">
                 <div id="ca-text-background" class="cv-text-1"></div>
@@ -327,6 +329,13 @@
         <a href="https://github.com/gjoyner09" target="_blank" rel="noopener"><img src="src/img/github.svg" alt="github"></a> &nbsp; &nbsp;
         <a href="mailto:gjoyner09@gmail.com" target="_blank" rel="noopener"><img src="src/img/gmail.svg" alt="gmail"></a> &nbsp; &nbsp;
     </footer>
+    
+    <!-- script for animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+  
 </body>
 
 </html>
