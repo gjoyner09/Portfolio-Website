@@ -39,18 +39,40 @@ ul {
 @-webkit-keyframes home-text-animation {
   0% {
     left: -5000px;
+    color: red;
   }
   100% {
     left: 25%;
+    color: black;
   }
 }
 
 @keyframes home-text-animation {
   0% {
     left: -5000px;
+    color: red;
   }
   100% {
     left: 25%;
+    color: black;
+  }
+}
+
+@-webkit-keyframes a-animation {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+@keyframes a-animation {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0px;
   }
 }
 
@@ -74,6 +96,7 @@ ul {
 }
 
 .navbar a {
+  position: relative;
   color: #373636;
   padding: 14px 14px;
   border-bottom: solid #B9B9B9;
@@ -82,6 +105,34 @@ ul {
 
 .navbar a:hover {
   border-bottom: solid #373636;
+}
+
+.navbar #a1 {
+  -webkit-animation-name: a-animation;
+          animation-name: a-animation;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+}
+
+.navbar #a2 {
+  -webkit-animation-name: a-animation;
+          animation-name: a-animation;
+  -webkit-animation-duration: 4.8s;
+          animation-duration: 4.8s;
+}
+
+.navbar #a3 {
+  -webkit-animation-name: a-animation;
+          animation-name: a-animation;
+  -webkit-animation-duration: 5.1s;
+          animation-duration: 5.1s;
+}
+
+.navbar #a4 {
+  -webkit-animation-name: a-animation;
+          animation-name: a-animation;
+  -webkit-animation-duration: 5.4s;
+          animation-duration: 5.4s;
 }
 
 .navbar .navbar-div {
@@ -122,8 +173,8 @@ ul {
   left: 5%;
   -webkit-animation-name: profpic-animation;
           animation-name: profpic-animation;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 #home #home-text {
@@ -144,8 +195,8 @@ ul {
   text-align: center;
   -webkit-animation-name: home-text-animation;
           animation-name: home-text-animation;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 #home #home-text #home-text-p {
@@ -163,8 +214,8 @@ ul {
   border-radius: 10px;
   -webkit-animation-name: home-text-animation;
           animation-name: home-text-animation;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 #bio {
