@@ -392,7 +392,7 @@ ul {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 100;
+  z-index: 10;
   /* Sit on top */
   padding-top: 100px;
   /* Location of the box */
@@ -406,7 +406,7 @@ ul {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   /* Black w/ opacity */
   font-family: 'Quicksand', sans-serif;
 }
