@@ -314,6 +314,7 @@ ul {
   margin-bottom: 1rem;
   margin-top: 1rem;
   border-bottom: solid rgba(238, 195, 198, 0);
+  cursor: pointer;
 }
 
 #portfolio #portfolio-main #portfolio-text .portfolio-project-container img {
@@ -323,7 +324,6 @@ ul {
   margin-right: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  cursor: pointer;
 }
 
 #portfolio #portfolio-main #portfolio-text .portfolio-project-container p {
@@ -331,7 +331,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0.5rem;
-  cursor: pointer;
 }
 
 #portfolio #portfolio-main #portfolio-text .portfolio-project-container:hover {
@@ -678,6 +677,12 @@ footer div {
       left: 5%;
     }
   }
+  #portfolio .modal .modal-content .modal-container .modal-container-img {
+    width: 97%;
+  }
+  #portfolio .modal .modal-content .modal-container .modal-container-text {
+    width: 97%;
+  }
   #cv #cv-div .cv-img img {
     width: 90%;
   }
@@ -832,6 +837,14 @@ footer div {
   }
   #cv #cv-div {
     font-size: 13px;
+  }
+  #portfolio .modal .modal-content .modal-container .modal-container-text .modal-links a {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: black;
+    background-color: #b6b6b6;
+    border-radius: 3px;
   }
 }
 

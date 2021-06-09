@@ -5,13 +5,9 @@ var modal4 = document.getElementById("myModal4")
 
 // Get the buttons and images that open the modals
 var btn1 = document.getElementById("myBtn1")
-var img1 = document.getElementById("myImg1")
 var btn2 = document.getElementById("myBtn2")
-var img2 = document.getElementById("myImg2")
 var btn3 = document.getElementById("myBtn3")
-var img3 = document.getElementById("myImg3")
 var btn4 = document.getElementById("myBtn4")
-var img4 = document.getElementById("myImg4")
 
 // Get the <span> element that closes the modal
 var span1 = document.getElementsByClassName("close")[0]
@@ -33,23 +29,6 @@ btn3.onclick = function() {
 }
 
 btn4.onclick = function() {
-    modal4.style.display = "block"
-}
-
-// When the user clicks the button, open the modal 
-img1.onclick = function() {
-    modal1.style.display = "block"
-}
-
-img2.onclick = function() {
-    modal2.style.display = "block"
-}
-
-img3.onclick = function() {
-    modal3.style.display = "block"
-}
-
-img4.onclick = function() {
     modal4.style.display = "block"
 }
 
