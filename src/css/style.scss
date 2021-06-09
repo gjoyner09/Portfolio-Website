@@ -1,8 +1,10 @@
+// hero font
 @mixin header-font {
     font-family: 'Poiret One', cursive;
     font-weight: bold;
 }
 
+// main font
 @mixin body-font {
     font-family: 'Quicksand', sans-serif;
 }
@@ -42,14 +44,13 @@ ul {
 @keyframes home-text-animation {
     0% {
         left: -5000px;
-        color: red;
     }
     100% {
         left: 25%;
-        color: black;
     }
 }
 
+// animation for navbar links
 @keyframes a-animation {
     0% {
         top:-300px;
@@ -59,7 +60,7 @@ ul {
     }
 }
 
-// fixed top navbar
+// navbar fixed to top
 .navbar {
     @include header-font;
     display: flex;
@@ -86,6 +87,7 @@ ul {
     a:hover {
         border-bottom: solid #373636;
     }
+    // animate the navbar links to drop in
     #a1 {
         animation-name: a-animation;
         animation-duration: 4.5s;
@@ -117,7 +119,7 @@ ul {
         justify-content: flex-end;
         font-size: 24px;
     }
-    
+    // hamburger button
     .hamburger {
         position: relative;
         display: none;
@@ -140,6 +142,7 @@ ul {
         z-index: 30;
     }
     
+    // transition from not clicked to clicked
     .hamburger.is-active:before {
         transform: rotate(-45deg) translate(-6px, 6px)
     }
@@ -152,6 +155,7 @@ ul {
         opacity: 0;
     }
     
+    // hamburger links
     .mobile-nav {
         display: none;
         left: 100%;
@@ -185,8 +189,13 @@ ul {
 // home section
 #home {
     height: 100vh;
+    max-width: 100%;
     background: url('../img/wedding.jpg') no-repeat center center fixed;
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    // headshot photo
     #profpic {
         width: 17%;
         border-radius: 40px;
@@ -197,6 +206,7 @@ ul {
         animation-name: profpic-animation;
         animation-duration: 2s;
     }
+    // text in homepage
     #home-text {
         height: 60px;
         width: 60%;
@@ -280,6 +290,7 @@ ul {
         width: 60%;
         border-radius: 40px;
     }
+    // google map
     #bio-map-container {
         padding-top: 4rem;
         width: 100%;
@@ -414,18 +425,19 @@ ul {
         }
     }
     
+    // project modals
     .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 10; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
+        display: none;
+        position: fixed;
+        z-index: 10;
+        padding-top: 100px;
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.8);
         @include body-font;
     }
     .modal-content {
@@ -474,7 +486,7 @@ ul {
         }
     }
     
-    /* The Close Button */
+    // close button for modals
     .close {
         color: #aaaaaa;
         float: right;
@@ -732,6 +744,7 @@ footer {
     }
 }
 
+// for smaller screens, show hamburger menu and not the standard navbar
 @media only screen and (max-width: 768px) {
     .navbar {
         .hamburger {

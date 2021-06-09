@@ -39,22 +39,18 @@ ul {
 @-webkit-keyframes home-text-animation {
   0% {
     left: -5000px;
-    color: red;
   }
   100% {
     left: 25%;
-    color: black;
   }
 }
 
 @keyframes home-text-animation {
   0% {
     left: -5000px;
-    color: red;
   }
   100% {
     left: 25%;
-    color: black;
   }
 }
 
@@ -236,8 +232,12 @@ ul {
 
 #home {
   height: 100vh;
+  max-width: 100%;
   background: url("../img/wedding.jpg") no-repeat center center fixed;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #home #profpic {
@@ -376,7 +376,6 @@ ul {
   background: url("../img/peoplemover-desktop-v2.jpg") no-repeat center center fixed;
   background-size: cover;
   position: relative;
-  /* The Close Button */
 }
 
 #portfolio #portfolio-title {
@@ -515,25 +514,16 @@ ul {
 
 #portfolio .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 10;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8);
-  /* Black w/ opacity */
   font-family: 'Quicksand', sans-serif;
 }
 

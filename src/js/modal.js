@@ -1,9 +1,10 @@
+// get the DOM elements for the modals
 var modal1 = document.getElementById("myModal1")
 var modal2 = document.getElementById("myModal2")
 var modal3 = document.getElementById("myModal3")
 var modal4 = document.getElementById("myModal4")
 
-// Get the buttons and images that open the modals
+// Get the elements that open the modals
 var btn1 = document.getElementById("myBtn1")
 var btn2 = document.getElementById("myBtn2")
 var btn3 = document.getElementById("myBtn3")
@@ -15,7 +16,7 @@ var span2 = document.getElementsByClassName("close")[1]
 var span3 = document.getElementsByClassName("close")[2]
 var span4 = document.getElementsByClassName("close")[3]
 
-// When the user clicks the button, open the modal 
+// When the user clicks on the projects, open the modals
 btn1.onclick = function() {
     modal1.style.display = "block"
 }
