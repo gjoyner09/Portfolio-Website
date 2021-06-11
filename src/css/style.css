@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -869,11 +870,9 @@ footer div {
   }
   #bio #bio-text-container {
     width: 100%;
-    margin: auto;
   }
   #bio #bio-text-container #bio-text {
     width: 80%;
-    margin: auto;
   }
 }
 

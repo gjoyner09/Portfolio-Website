@@ -11,6 +11,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 // smooth scrolling links
@@ -814,10 +815,8 @@ footer {
         }
         #bio-text-container {
             width: 100%;
-            margin: auto;
             #bio-text {
                 width: 80%;
-                margin: auto;
             }
         }
     }
